@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>6d21b764-9b3f-406c-9618-1eae003a6d3e</PackageIdentityName>
     <PackageIdentityPublisher>CN=Gallvanos</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\bin\x64\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\bin\x64\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>FB27A5B5ECA16C7662648EB8EDA8B1A77DAD563ADCF9796C27E2BB7FB269564E</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>6d21b764-9b3f-406c-9618-1eae003a6d3e_1.0.0.0_x64__5p7gazyazzmnj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>6d21b764-9b3f-406c-9618-1eae003a6d3e_5p7gazyazzmnj!App</RegisteredUserModeAppID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-05T13:11:17.171</Modified>
+      <Modified>2020-05-05T17:13:14.963</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\bin\x64\Debug\InGameMap.exe">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\bin\x64\Debug\InGameMap.exe">
       <PackagePath>entrypoint\InGameMap.exe</PackagePath>
-      <Modified>2020-05-05T13:11:16.319</Modified>
+      <Modified>2020-05-05T17:13:14.462</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -46,135 +46,135 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2019-03-18T17:36:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\Assets\base.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\Assets\base.png">
       <PackagePath>Assets\base.png</PackagePath>
       <Modified>2020-05-01T10:12:31.261</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\Assets\baseAlly.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\Assets\baseAlly.png">
       <PackagePath>Assets\baseAlly.png</PackagePath>
       <Modified>2020-05-01T10:17:57.377</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\Assets\baseEnemy.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\Assets\baseEnemy.png">
       <PackagePath>Assets\baseEnemy.png</PackagePath>
       <Modified>2020-05-01T10:13:38.767</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\Assets\car.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\Assets\car.png">
       <PackagePath>Assets\car.png</PackagePath>
       <Modified>2020-05-01T09:40:47.523</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\Assets\carAlly.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\Assets\carAlly.png">
       <PackagePath>Assets\carAlly.png</PackagePath>
       <Modified>2020-05-01T10:18:24.048</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\Assets\carEnemy.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\Assets\carEnemy.png">
       <PackagePath>Assets\carEnemy.png</PackagePath>
       <Modified>2020-05-01T09:46:56.660</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\Assets\carYou.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\Assets\carYou.png">
       <PackagePath>Assets\carYou.png</PackagePath>
       <Modified>2020-05-01T10:19:42.818</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\Assets\jet.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\Assets\jet.png">
       <PackagePath>Assets\jet.png</PackagePath>
       <Modified>2020-05-01T09:39:55.223</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\Assets\jetAlly.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\Assets\jetAlly.png">
       <PackagePath>Assets\jetAlly.png</PackagePath>
       <Modified>2020-05-01T10:18:47.508</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\Assets\jetEnemy.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\Assets\jetEnemy.png">
       <PackagePath>Assets\jetEnemy.png</PackagePath>
       <Modified>2020-05-01T09:43:24.169</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\Assets\jetYou.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\Assets\jetYou.png">
       <PackagePath>Assets\jetYou.png</PackagePath>
       <Modified>2020-05-01T10:19:26.483</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\Assets\ship.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\Assets\ship.png">
       <PackagePath>Assets\ship.png</PackagePath>
       <Modified>2020-05-01T09:45:02.776</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\Assets\shipAlly.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\Assets\shipAlly.png">
       <PackagePath>Assets\shipAlly.png</PackagePath>
       <Modified>2020-05-01T10:19:02.473</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\Assets\shipEnemy.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\Assets\shipEnemy.png">
       <PackagePath>Assets\shipEnemy.png</PackagePath>
       <Modified>2020-05-01T09:47:09.301</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\Assets\shipYou.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\Assets\shipYou.png">
       <PackagePath>Assets\shipYou.png</PackagePath>
       <Modified>2020-05-01T10:19:52.925</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2020-03-20T20:11:45.929</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-03-20T20:11:45.929</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-03-20T20:11:45.929</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-03-20T20:11:45.929</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-03-20T20:11:45.929</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-03-20T20:11:45.929</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-03-20T20:11:45.929</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\Assets\bomb.jpg">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\Assets\bomb.jpg">
       <PackagePath>Assets\bomb.jpg</PackagePath>
       <Modified>2020-05-05T10:39:43.949</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\Assets\map.jpg">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\Assets\map.jpg">
       <PackagePath>Assets\map.jpg</PackagePath>
       <Modified>2020-05-03T10:43:32.864</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2020-05-02T19:27:51.649</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\bin\x64\Debug\InGameMap.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\bin\x64\Debug\InGameMap.xr.xml">
       <PackagePath>InGameMap.xr.xml</PackagePath>
-      <Modified>2020-05-05T09:15:46.863</Modified>
+      <Modified>2020-05-05T17:05:43.332</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\bin\x64\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-05-05T13:11:16.135</Modified>
+      <Modified>2020-05-05T17:13:14.234</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\bin\x64\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-05-05T13:11:16.135</Modified>
+      <Modified>2020-05-05T17:13:14.235</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2019-03-18T16:33:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <Modified>2020-05-05T10:45:45.524</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\InGameMap\InGameMap\bin\x64\Debug\Core\InGameMap.exe">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Daniel Cortijo\InGameMap\bin\x64\Debug\Core\InGameMap.exe">
       <PackagePath>InGameMap.exe</PackagePath>
-      <Modified>2020-05-05T13:11:17.165</Modified>
+      <Modified>2020-05-05T17:13:14.959</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

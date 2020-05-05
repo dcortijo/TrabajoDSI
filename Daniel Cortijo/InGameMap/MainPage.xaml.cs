@@ -18,6 +18,7 @@ using Windows.UI.Input;
 using Windows.Gaming.Input;
 using System.Drawing;
 using Windows.UI;
+using System.Data;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0xc0a
 
@@ -151,6 +152,7 @@ namespace InGameMap
                 switch (e.Key)
                 {
                     case Windows.System.VirtualKey.B:
+                        deactivateAllBombs();   //So no more than 1 bomb carrier
                         ListaVeh[activeIndex].bomb = !ListaVeh[activeIndex].bomb;
                         if (ListaVeh[activeIndex].bomb) {
                             bombIndex = activeIndex;
@@ -200,8 +202,37 @@ namespace InGameMap
             }
             if(bombIndex > -1)
             {
-                MapCanvas.Children.Last().SetValue(Canvas.LeftProperty, ListaVeh[activeIndex].X + 40);
-                MapCanvas.Children.Last().SetValue(Canvas.TopProperty, ListaVeh[activeIndex].Y);
+                MapCanvas.Children.Last().SetValue(Canvas.LeftProperty, ListaVeh[bombIndex].X + 40);
+                MapCanvas.Children.Last().SetValue(Canvas.TopProperty, ListaVeh[bombIndex].Y);
+                checkIfBombInBase();
+            }
+        }
+
+        bool checkIfBombInBase()
+        {
+            bool result = false;
+            if (ListaVeh[bombIndex].team == InGameVehicle.aligment.ally || ListaVeh[bombIndex].team == InGameVehicle.aligment.yours) 
+            {
+                if(ListaVeh[bombIndex].X < 200 && ListaVeh[bombIndex].X > 100 && ListaVeh[bombIndex].Y > 100 && ListaVeh[bombIndex].Y < 200)
+                {
+                    int i = ListaVeh[-1].X; //Crash
+                }
+            }
+            else
+            {
+                if (ListaVeh[bombIndex].X < 900 && ListaVeh[bombIndex].X > 800 && ListaVeh[bombIndex].Y > 600 && ListaVeh[bombIndex].Y < 700)
+                {
+                    int i = ListaVeh[-1].X; //Crash
+                }
+            }
+            return result;
+        }
+
+        void deactivateAllBombs()
+        {
+            for (int i = 0; i < ListaVeh.Count(); ++i)
+            {
+                ListaVeh[i].bomb = false;
             }
         }
     }

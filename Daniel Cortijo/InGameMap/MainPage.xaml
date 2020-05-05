@@ -30,6 +30,10 @@
         <ScrollViewer ZoomMode="Enabled">
             <Grid>
                 <Image x:Name="MapImg" Source="Assets/map.jpg" Stretch="Fill"/>
+                <Canvas x:Name="BaseCanvas">
+                    <Image x:Name="EnemyBase" Canvas.Left="100" Canvas.Top="100" Source="Assets/baseEnemy.png" Width="100" Height="100"/>
+                    <Image x:Name="AllyBase" Canvas.Left="800" Canvas.Top="600" Source="Assets/baseAlly.png" Width="100" Height="100"/>
+                </Canvas>
                 <Canvas x:Name="MapCanvas" PointerPressed="ClickedMap"/>
                 <Canvas x:Name="HealthCanvas"/>
                 <Canvas x:Name="AmmoCanvas"/>
