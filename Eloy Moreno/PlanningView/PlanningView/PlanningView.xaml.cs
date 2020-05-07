@@ -151,9 +151,16 @@ namespace PlanningView
 
         void TimerTick(object sender, object e)
         {
-            timeLeft--;
+            if (timeLeft > 0)
+                timeLeft--;
+            else if (timeLeft < 0)
+                timeLeft = 0;
             Timer.Text = ((timeLeft / 60) <= 9 ? "0" : "") + (timeLeft / 60).ToString() + ":"
                 + ((timeLeft % 60) <= 9 ? "0" : "") + (timeLeft % 60).ToString();
+            if (timeLeft == 0)
+            {
+                // Ve a ingame
+            }
         }
 
         private void Jet_Button_Click(object sender, RoutedEventArgs e)
