@@ -56,7 +56,7 @@ namespace Hito3
             {
                 case Windows.System.VirtualKey.Escape:
                     //Se cambia de página
-                    //this.Frame.Navigate(typeof(Page2));
+                    this.Frame.Navigate(typeof(InGameMap));
                     break;
                 case Windows.System.VirtualKey.Space:
                     //Daño demostrativo de la barra de vida

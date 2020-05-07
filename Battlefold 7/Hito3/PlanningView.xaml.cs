@@ -159,7 +159,7 @@ namespace Hito3
                 + ((timeLeft % 60) <= 9 ? "0" : "") + (timeLeft % 60).ToString();
             if (timeLeft == 0)
             {
-                // Ve a ingame
+                this.Frame.Navigate(typeof(InGameMap));
             }
         }
 

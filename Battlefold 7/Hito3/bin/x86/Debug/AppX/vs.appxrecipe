@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>GEORGI</Machine>
-    <WindowsUser>georgimednikov</WindowsUser>
+    <Machine>ALOITO555-PC</Machine>
+    <WindowsUser>aloito555</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>f4cd55ca-7def-4df1-adc2-8f056cfa6538</PackageIdentityName>
     <PackageIdentityPublisher>CN=georgimednikov</PackageIdentityPublisher>
-    <IntermediateOutputPath>E:\Proyectos\DSI\Hito3\Hito3\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>E:\Proyectos\DSI\Hito3\Hito3\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>CB83F50955EEBB03E5C43E7735E2A0652B368209C1679DD417CAD63064261FB0</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>f4cd55ca-7def-4df1-adc2-8f056cfa6538_1.0.0.0_x86__z3y6jbs6sxxjw</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>f4cd55ca-7def-4df1-adc2-8f056cfa6538_z3y6jbs6sxxjw!App</RegisteredUserModeAppID>
@@ -27,126 +27,218 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="E:\Proyectos\DSI\Hito3\Hito3\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-07T09:32:48.689</Modified>
+      <Modified>2020-05-07T13:54:23.235</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="E:\Proyectos\DSI\Hito3\Hito3\bin\x86\Debug\Hito3.exe">
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\Hito3.exe">
       <PackagePath>entrypoint\Hito3.exe</PackagePath>
-      <Modified>2020-05-07T09:32:48.029</Modified>
+      <Modified>2020-05-07T13:54:22.583</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
-      <Modified>2019-07-22T12:01:14.000</Modified>
+      <Modified>2019-07-22T13:01:14.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
-      <Modified>2019-03-18T16:36:56.000</Modified>
+      <Modified>2019-03-18T17:36:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Proyectos\DSI\Hito3\Hito3\Assets\audio.png">
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\audio.png">
       <PackagePath>Assets\audio.png</PackagePath>
-      <Modified>2020-05-06T20:58:46.266</Modified>
+      <Modified>2020-05-07T13:47:40.348</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Proyectos\DSI\Hito3\Hito3\Assets\Cruz.png">
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\baseAlly.png">
+      <PackagePath>Assets\baseAlly.png</PackagePath>
+      <Modified>2020-05-07T13:47:40.349</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\baseEnemy.png">
+      <PackagePath>Assets\baseEnemy.png</PackagePath>
+      <Modified>2020-05-07T13:47:40.349</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\bomb-128.png">
+      <PackagePath>Assets\bomb-128.png</PackagePath>
+      <Modified>2020-05-07T13:47:40.367</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\bomb.png">
+      <PackagePath>Assets\bomb.png</PackagePath>
+      <Modified>2020-05-07T13:47:40.368</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\BombLocation.png">
+      <PackagePath>Assets\BombLocation.png</PackagePath>
+      <Modified>2020-05-07T13:47:40.324</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\carYou.png">
+      <PackagePath>Assets\carYou.png</PackagePath>
+      <Modified>2020-05-07T13:47:40.369</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\Cruz.png">
       <PackagePath>Assets\Cruz.png</PackagePath>
-      <Modified>2020-05-06T22:07:16.144</Modified>
+      <Modified>2020-05-07T13:47:40.324</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Proyectos\DSI\Hito3\Hito3\Assets\mando.png">
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\helicopter_purple.png">
+      <PackagePath>Assets\helicopter_purple.png</PackagePath>
+      <Modified>2020-05-07T13:47:40.373</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\InfluenceAlly.png">
+      <PackagePath>Assets\InfluenceAlly.png</PackagePath>
+      <Modified>2020-05-07T13:47:40.333</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\InfluenceEnemy.png">
+      <PackagePath>Assets\InfluenceEnemy.png</PackagePath>
+      <Modified>2020-05-07T13:47:40.341</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\jetIcon.png">
+      <PackagePath>Assets\jetIcon.png</PackagePath>
+      <Modified>2020-05-07T13:47:40.375</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\jetYou.png">
+      <PackagePath>Assets\jetYou.png</PackagePath>
+      <Modified>2020-05-07T13:47:40.376</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\mando.png">
       <PackagePath>Assets\mando.png</PackagePath>
-      <Modified>2020-05-06T19:14:00.177</Modified>
+      <Modified>2020-05-07T13:47:40.376</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Proyectos\DSI\Hito3\Hito3\Assets\ojo.png">
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\ojo.png">
       <PackagePath>Assets\ojo.png</PackagePath>
-      <Modified>2020-05-06T19:13:08.108</Modified>
+      <Modified>2020-05-07T13:47:40.379</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Proyectos\DSI\Hito3\Hito3\Assets\pantalla.png">
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\pantalla.png">
       <PackagePath>Assets\pantalla.png</PackagePath>
-      <Modified>2020-05-06T20:59:02.909</Modified>
+      <Modified>2020-05-07T13:47:40.380</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Proyectos\DSI\Hito3\Hito3\Assets\Raton.png">
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\pistol_icon.png">
+      <PackagePath>Assets\pistol_icon.png</PackagePath>
+      <Modified>2020-05-07T13:47:40.380</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\plus.png">
+      <PackagePath>Assets\plus.png</PackagePath>
+      <Modified>2020-05-07T13:47:40.425</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\Raton.png">
       <PackagePath>Assets\Raton.png</PackagePath>
-      <Modified>2020-05-06T19:12:56.109</Modified>
+      <Modified>2020-05-07T13:47:40.343</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Proyectos\DSI\Hito3\Hito3\Assets\UK.png">
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\shipYou.png">
+      <PackagePath>Assets\shipYou.png</PackagePath>
+      <Modified>2020-05-07T13:47:40.427</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\truck_purple.png">
+      <PackagePath>Assets\truck_purple.png</PackagePath>
+      <Modified>2020-05-07T13:47:40.432</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\UK.png">
       <PackagePath>Assets\UK.png</PackagePath>
-      <Modified>2020-05-06T19:13:41.258</Modified>
+      <Modified>2020-05-07T13:47:40.346</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Proyectos\DSI\Hito3\Hito3\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\VehicleSelectBackground.png">
+      <PackagePath>Assets\VehicleSelectBackground.png</PackagePath>
+      <Modified>2020-05-07T13:47:40.346</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\WeaponSelectBackground.png">
+      <PackagePath>Assets\WeaponSelectBackground.png</PackagePath>
+      <Modified>2020-05-07T13:47:40.347</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2020-02-16T10:20:50.235</Modified>
+      <Modified>2020-05-07T13:47:40.342</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Proyectos\DSI\Hito3\Hito3\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-16T10:20:50.235</Modified>
+      <Modified>2020-05-07T13:47:40.344</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Proyectos\DSI\Hito3\Hito3\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-16T10:20:50.235</Modified>
+      <Modified>2020-05-07T13:47:40.344</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Proyectos\DSI\Hito3\Hito3\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-16T10:20:50.235</Modified>
+      <Modified>2020-05-07T13:47:40.344</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Proyectos\DSI\Hito3\Hito3\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-16T10:20:50.235</Modified>
+      <Modified>2020-05-07T13:47:40.345</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Proyectos\DSI\Hito3\Hito3\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-16T10:20:50.235</Modified>
+      <Modified>2020-05-07T13:47:40.345</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Proyectos\DSI\Hito3\Hito3\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-16T10:20:50.235</Modified>
+      <Modified>2020-05-07T13:47:40.347</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Proyectos\DSI\Hito3\Hito3\Assets\Fondo.jpg">
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\Fondo.jpg">
       <PackagePath>Assets\Fondo.jpg</PackagePath>
-      <Modified>2020-05-04T13:01:51.235</Modified>
+      <Modified>2020-05-07T13:47:40.325</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Proyectos\DSI\Hito3\Hito3\Assets\Gallvanos.jpg">
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\Gallvanos.jpg">
       <PackagePath>Assets\Gallvanos.jpg</PackagePath>
-      <Modified>2020-05-06T19:13:23.617</Modified>
+      <Modified>2020-05-07T13:47:40.325</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Proyectos\DSI\Hito3\Hito3\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\jet.jpg">
+      <PackagePath>Assets\jet.jpg</PackagePath>
+      <Modified>2020-05-07T13:47:40.374</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\map.jpg">
+      <PackagePath>Assets\map.jpg</PackagePath>
+      <Modified>2020-05-07T13:47:40.377</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\minimap.jpg">
+      <PackagePath>Assets\minimap.jpg</PackagePath>
+      <Modified>2020-05-07T13:47:40.378</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2020-05-04T12:59:04.353</Modified>
+      <Modified>2020-05-07T13:47:40.477</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Proyectos\DSI\Hito3\Hito3\bin\x86\Debug\Hito3.xr.xml">
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\Hito3.xr.xml">
       <PackagePath>Hito3.xr.xml</PackagePath>
-      <Modified>2020-05-07T09:32:47.864</Modified>
+      <Modified>2020-05-07T13:49:13.209</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Proyectos\DSI\Hito3\Hito3\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-05-07T09:32:47.891</Modified>
+      <Modified>2020-05-07T13:52:18.838</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Proyectos\DSI\Hito3\Hito3\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\FirstPerson.xbf">
+      <PackagePath>FirstPerson.xbf</PackagePath>
+      <Modified>2020-05-07T13:52:18.838</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\InGameMap.xbf">
+      <PackagePath>InGameMap.xbf</PackagePath>
+      <Modified>2020-05-07T13:52:18.838</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-05-07T09:32:47.891</Modified>
+      <Modified>2020-05-07T13:52:18.838</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Proyectos\DSI\Hito3\Hito3\bin\x86\Debug\Options.xbf">
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\Options.xbf">
       <PackagePath>Options.xbf</PackagePath>
-      <Modified>2020-05-07T09:32:47.890</Modified>
+      <Modified>2020-05-07T13:52:18.834</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\PlanningView.xbf">
+      <PackagePath>PlanningView.xbf</PackagePath>
+      <Modified>2020-05-07T13:52:18.838</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2019-03-18T15:33:42.000</Modified>
+      <Modified>2019-03-18T16:33:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Proyectos\DSI\Hito3\Hito3\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-05-06T22:10:24.387</Modified>
+      <Modified>2020-05-07T13:49:13.696</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Proyectos\DSI\Hito3\Hito3\bin\x86\Debug\Core\Hito3.exe">
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\Core\Hito3.exe">
       <PackagePath>Hito3.exe</PackagePath>
-      <Modified>2020-05-07T09:32:48.663</Modified>
+      <Modified>2020-05-07T13:54:23.231</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -175,6 +175,9 @@ namespace Hito3
                     case Windows.System.VirtualKey.D:
                         ListaVeh[activeIndex].X += 5;
                         break;
+                    case Windows.System.VirtualKey.F:
+                        this.Frame.Navigate(typeof(FirstPerson));
+                        break;
                 }
                 reposition();
             }

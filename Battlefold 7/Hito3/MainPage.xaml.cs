@@ -41,7 +41,7 @@ namespace Hito3
 
         private void Play_Button_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(PlanningView), e);
         }
         
         private void Exit_Button_Click(object sender, RoutedEventArgs e)
