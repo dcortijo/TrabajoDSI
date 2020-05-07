@@ -180,6 +180,7 @@
     <Content Include="Assets\shipYou.png" />
     <Content Include="Assets\truck_purple.png" />
     <Content Include="Assets\UK.png" />
+    <Content Include="Assets\vehicles.png" />
     <Content Include="Assets\VehicleSelectBackground.png" />
     <Content Include="Assets\WeaponSelectBackground.png" />
     <Content Include="Properties\Default.rd.xml" />

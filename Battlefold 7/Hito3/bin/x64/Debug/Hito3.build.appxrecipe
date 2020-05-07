@@ -118,6 +118,9 @@
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\UK.png">
       <PackagePath>Assets\UK.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\vehicles.png">
+      <PackagePath>Assets\vehicles.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\VehicleSelectBackground.png">
       <PackagePath>Assets\VehicleSelectBackground.png</PackagePath>
     </AppxPackagedFile>
