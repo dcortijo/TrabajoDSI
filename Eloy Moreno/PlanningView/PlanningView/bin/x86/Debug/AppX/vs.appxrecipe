@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Eloy Moreno\PlanningView\PlanningView\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-06T14:31:49.126</Modified>
+      <Modified>2020-05-07T12:35:41.856</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Eloy Moreno\PlanningView\PlanningView\bin\x86\Debug\PlanningView.exe">
       <PackagePath>entrypoint\PlanningView.exe</PackagePath>
-      <Modified>2020-05-06T14:31:46.442</Modified>
+      <Modified>2020-05-07T12:35:41.536</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -82,6 +82,10 @@
       <PackagePath>Assets\jetYou.png</PackagePath>
       <Modified>2020-05-06T08:24:21.583</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Eloy Moreno\PlanningView\PlanningView\Assets\pistol_icon.png">
+      <PackagePath>Assets\pistol_icon.png</PackagePath>
+      <Modified>2020-05-07T11:33:42.757</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Eloy Moreno\PlanningView\PlanningView\Assets\plus.png">
       <PackagePath>Assets\plus.png</PackagePath>
       <Modified>2020-05-06T10:05:18.346</Modified>
@@ -93,6 +97,14 @@
     <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Eloy Moreno\PlanningView\PlanningView\Assets\truck_purple.png">
       <PackagePath>Assets\truck_purple.png</PackagePath>
       <Modified>2020-05-01T10:30:30.068</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Eloy Moreno\PlanningView\PlanningView\Assets\VehicleSelectBackground.png">
+      <PackagePath>Assets\VehicleSelectBackground.png</PackagePath>
+      <Modified>2020-05-07T09:32:21.950</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Eloy Moreno\PlanningView\PlanningView\Assets\WeaponSelectBackground.png">
+      <PackagePath>Assets\WeaponSelectBackground.png</PackagePath>
+      <Modified>2020-05-07T09:32:33.230</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Eloy Moreno\PlanningView\PlanningView\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -138,15 +150,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Eloy Moreno\PlanningView\PlanningView\bin\x86\Debug\PlanningView.xr.xml">
       <PackagePath>PlanningView.xr.xml</PackagePath>
-      <Modified>2020-05-06T14:29:45.076</Modified>
+      <Modified>2020-05-07T12:34:56.064</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Eloy Moreno\PlanningView\PlanningView\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-05-06T14:01:03.645</Modified>
+      <Modified>2020-05-07T12:35:41.408</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Eloy Moreno\PlanningView\PlanningView\bin\x86\Debug\PlanningView.xbf">
       <PackagePath>PlanningView.xbf</PackagePath>
-      <Modified>2020-05-06T14:31:45.991</Modified>
+      <Modified>2020-05-07T12:35:41.408</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -154,11 +166,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Eloy Moreno\PlanningView\PlanningView\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-05-06T13:03:52.033</Modified>
+      <Modified>2020-05-07T11:38:24.053</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Eloy Moreno\PlanningView\PlanningView\bin\x86\Debug\Core\PlanningView.exe">
       <PackagePath>PlanningView.exe</PackagePath>
-      <Modified>2020-05-06T14:31:49.064</Modified>
+      <Modified>2020-05-07T12:35:41.851</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

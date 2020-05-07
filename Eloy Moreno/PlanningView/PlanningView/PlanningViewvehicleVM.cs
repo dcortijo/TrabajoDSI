@@ -10,10 +10,8 @@ namespace PlanningView
     public class PlanningViewVehicleVM : PlanningViewVehicle
     {
         public ContentControl CCImg;
-        public ContentControl CCWeaponImg;
         public Image img;
-        public Image weaponImg;
-
+        public int X, Y;
         public PlanningViewVehicleVM(PlanningViewVehicle v)
         {
             img = new Image();
@@ -24,20 +22,15 @@ namespace PlanningView
             CCImg = new ContentControl();
             CCImg.Content = img;
             CCImg.UseSystemFocusVisuals = true;
-            weaponImg = new Image();
-            s = System.IO.Directory.GetCurrentDirectory() + "\\" + v.weaponImage;
-            weaponImg.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));
-            weaponImg.Width = 50;
-            weaponImg.Height = 50;
-            CCWeaponImg = new ContentControl();
-            CCWeaponImg.Content = weaponImg;
-            CCWeaponImg.UseSystemFocusVisuals = true;
 
             vehicleImage = v.vehicleImage;
-            weaponImage = v.weaponImage;
+            weapon = v.weapon;
             description = v.description;
             totalHealth = v.totalHealth;
             maxSpeed = v.maxSpeed;
+
+            X = 100;
+            Y = 100;
         }
     }
 }

@@ -124,6 +124,7 @@
     </Compile>
     <Compile Include="PlanningViewVehicle.cs" />
     <Compile Include="PlanningViewvehicleVM.cs" />
+    <Compile Include="PlanningViewWeapon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -142,9 +143,12 @@
     <Content Include="Assets\InfluenceEnemy.png" />
     <Content Include="Assets\jetYou.png" />
     <Content Include="Assets\map.jpg" />
+    <Content Include="Assets\pistol_icon.png" />
     <Content Include="Assets\plus.png" />
     <Content Include="Assets\shipYou.png" />
     <Content Include="Assets\truck_purple.png" />
+    <Content Include="Assets\VehicleSelectBackground.png" />
+    <Content Include="Assets\WeaponSelectBackground.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

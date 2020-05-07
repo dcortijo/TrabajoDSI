@@ -1,83 +1,110 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace PlanningView
 {
-    public class PlanningViewVehicle
+    public class PlanningViewVehicle : INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected void OnPropertyChanged([CallerMemberName] string propertyName = null) =>
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+
         public string vehicleImage;
-        public string weaponImage;
         public string description;
         public int totalHealth;
         public int maxSpeed;
+        public PlanningViewWeapon weapon;
         public static List<PlanningViewVehicle> vehicleTemplates = new List<PlanningViewVehicle>()
         {
             new PlanningViewVehicle()
             {
                 vehicleImage = "Assets\\plus.png",
-                weaponImage = "Assets\\plus.png",
                 description = "",
                 totalHealth = 0,
-                maxSpeed = 0
+                maxSpeed = 0,
+                weapon = PlanningViewWeapon.GetWeapon(0)
             },
             new PlanningViewVehicle()
             {
-                vehicleImage = "Assets\\helicopter_purple.png",
-                weaponImage = "Assets\\helicopter_purple.png", // CHANGE
-                description = "Helicóptero lento pero duro.",
+                vehicleImage = "Assets\\shipYou.png",
+                description = "Barco lento pero duro.",
                 totalHealth = 200,
-                maxSpeed = 60
-            },
+                maxSpeed = 60,
+                        weapon = PlanningViewWeapon.GetWeapon(0)
+
+    },
             new PlanningViewVehicle()
             {
-                vehicleImage = "Assets\\truck_purple.png",
-                weaponImage = "Assets\\truck_purple.png", // CHANGE
-                description = "Camión lento pero duro.",
-                totalHealth = 250,
-                maxSpeed = 55
-            },
+                vehicleImage = "Assets\\carYou.png",
+                description = "Coche rápido.",
+                totalHealth = 150,
+                maxSpeed = 50,
+                        weapon = PlanningViewWeapon.GetWeapon(0)
+
+    },
+            new PlanningViewVehicle()
+            {
+                vehicleImage = "Assets\\jetYou.png",
+                description = "Jet rápido pero frágil.",
+                totalHealth = 50,
+                maxSpeed = 90,
+                        weapon = PlanningViewWeapon.GetWeapon(0)
+
+    },
         };
         public static List<PlanningViewVehicle> vehicles = new List<PlanningViewVehicle>() {
             new PlanningViewVehicle()
             {
                 vehicleImage = "Assets\\plus.png",
-                weaponImage = "Assets\\plus.png",
                 description = "ADASD",
                 totalHealth = 0,
-                maxSpeed = 0
+                maxSpeed = 0,
+                                weapon = PlanningViewWeapon.GetWeapon(0)
+
             },
             new PlanningViewVehicle()
             {
                 vehicleImage = "Assets\\plus.png",
-                weaponImage = "Assets\\plus.png",
                 description = "",
                 totalHealth = 0,
-                maxSpeed = 0
-            },
+                maxSpeed = 0,
+                    weapon = PlanningViewWeapon.GetWeapon(0)
+
+},
             new PlanningViewVehicle()
             {
                 vehicleImage = "Assets\\plus.png",
-                weaponImage = "Assets\\plus.png",
                 description = "",
                 totalHealth = 0,
-                maxSpeed = 0
-            },
+                maxSpeed = 0,
+                    weapon = PlanningViewWeapon.GetWeapon(0)
+
+},
             new PlanningViewVehicle()
             {
                 vehicleImage = "Assets\\plus.png",
-                weaponImage = "Assets\\plus.png",
                 description = "",
                 totalHealth = 0,
-                maxSpeed = 0
-            }
-        };
+                maxSpeed = 0,
+                                weapon = PlanningViewWeapon.GetWeapon(0)
+
+    }
+};
 
         public static IList<PlanningViewVehicle> getAllVehicles()
         {
             return vehicles;
+        }
+
+        public static PlanningViewVehicle getVehicleTemplate(int index)
+        {
+            return vehicleTemplates[index];
         }
     }
 }

@@ -10,7 +10,7 @@
 
     <Page.Resources>
         <DataTemplate x:Key="VehicleSelect" x:DataType="local:PlanningViewVehicle">
-            <Grid>
+            <Grid MaxHeight="200"  Margin="5,5,70,5">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="5*"/>
                     <RowDefinition Height="*"/>
@@ -19,10 +19,73 @@
                     <ColumnDefinition Width="5*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Image x:Name="Background" Source="Assets/StoreLogo.png" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
-                <Image x:Name="WeaponBackground" Source="Assets/StoreLogo.png" Grid.Row="1" Grid.Column="1"/>
-                <Image x:Name="VehicleImage" Source="{x:Bind vehicleImage}" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
-                <Image x:Name="WeaponImage" Source="{x:Bind weaponImage}" Grid.Row="1" Grid.Column="1"/>
+
+                <Image x:Name="Background" Source="Assets/VehicleSelectBackground.png" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+                <Image x:Name="WeaponBackground" Source="Assets/WeaponSelectBackground.png" Grid.Row="1" Grid.Column="1"/>
+                <Image x:Name="VehicleImage" Source="{x:Bind vehicleImage, Mode=TwoWay}" Grid.ColumnSpan="2" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="15,15,15,15"/>
+                <Image x:Name="WeaponImage" Source="{x:Bind weapon.weaponImage, Mode=TwoWay}" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,5,5,5"/>
+                <Grid Tapped="VehicleButton_Click" Grid.ColumnSpan="2" Grid.RowSpan="2">
+                    <FlyoutBase.AttachedFlyout>
+                        <Flyout x:Name="VehicleFlyout" Closed="VehicleFlyout_Closed">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <!--Vehicles-->
+                                    <Button Content="Jet" Click="Jet_Button_Click"/>
+                                    <Button Content="Car" Click="Car_Button_Click"/>
+                                    <Button Content="Ship" Click="Ship_Button_Click"/>
+                                </StackPanel>
+                                <TextBlock Name="VehicleDescription" Text="{x:Bind description, Mode=TwoWay}"/>
+                                <TextBlock Text="STATS"/>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Text="Health"/>
+                                    <TextBlock Text="Speed" Grid.Row="1"/>
+                                    <TextBlock x:Name="VehicleHealth" Text="{x:Bind totalHealth, Mode=TwoWay}" Grid.Column="1"/>
+                                    <TextBlock x:Name="VehicleSpeed" Text="{x:Bind maxSpeed, Mode=TwoWay}" Grid.Row="1" Grid.Column="1"/>
+                                </Grid>
+                            </StackPanel>
+                        </Flyout>
+                    </FlyoutBase.AttachedFlyout>
+                    <Button x:Name="VehicleButton" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="15,15,15,15" FocusVisualPrimaryBrush="Transparent" Foreground="Transparent" FocusVisualSecondaryBrush="#00000000" BorderBrush="#00000000" Background="#00000000"/>
+                </Grid>
+                <Grid Tapped="WeaponButton_Tapped" Grid.Row="1" Grid.Column="1">
+                    <FlyoutBase.AttachedFlyout>
+                        <Flyout x:Name="WeaponFlyout" Closed="WeaponFlyout_Closed">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <!--Vehicles-->
+                                    <Button Content="Pistol" Click="Pistol_Button_Click"/>
+                                    <Button Content="Harpoon" Click="Harpoon_Button_Click"/>
+                                    <Button Content="Axe" Click="Axe_Button_Click"/>
+                                </StackPanel>
+                                <TextBlock Name="WeaponDescription" Text="{x:Bind weapon.weaponDescription, Mode=TwoWay}"/>
+                                <TextBlock Text="STATS"/>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Text="Ammo"/>
+                                    <TextBlock Text="Damage" Grid.Row="1"/>
+                                    <TextBlock x:Name="WeaponAmmo" Text="{x:Bind weapon.ammo, Mode=TwoWay}" Grid.Column="1"/>
+                                    <TextBlock x:Name="WeaponDamage" Text="{x:Bind weapon.damage, Mode=TwoWay}" Grid.Row="1" Grid.Column="1"/>
+                                </Grid>
+                            </StackPanel>
+                        </Flyout>
+                    </FlyoutBase.AttachedFlyout>
+                    <Button Name="WeaponButton" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5,5,5,5" FocusVisualPrimaryBrush="Transparent" Foreground="Transparent" FocusVisualSecondaryBrush="#00000000" BorderBrush="#00000000" Background="#00000000"/>
+                </Grid>
             </Grid>
         </DataTemplate>
     </Page.Resources>
@@ -32,19 +95,34 @@
             <ColumnDefinition Width="5*"/>
         </Grid.ColumnDefinitions>
         <RelativePanel Background="LightBlue"/>
-        <ListView Name="ListViewVehiculos" ItemTemplate="{StaticResource VehicleSelect}" ItemsSource="{x:Bind ListaVehiculos}"/>
+        <ListView Name="ListViewVehiculos" ItemTemplate="{StaticResource VehicleSelect}" ItemsSource="{x:Bind ListaVehiculos}" SelectionChanged="ListViewVehiculos_SelectionChanged"/>
         <Grid Grid.Column="1">
-            <Image Source="Assets/map.jpg" Grid.Column="1" Stretch="Fill"/>
-            <Image Source="Assets/InfluenceAlly.png" Stretch="Uniform" Width="400" Margin="1190,289,10,-289"/>
-            <Image Source="Assets/InfluenceEnemy.png" Stretch="Uniform" Width="400" Margin="53,-329,1147,329"/>
-            <Image Source="Assets/BombLocation.png" Stretch="Uniform" Width="400" Margin="657,0,543,0"/>
-            <Image Source="Assets/baseAlly.png" Width="60" Height="100" Margin="1452,815,88,165"/>
-            <Image Source="Assets/baseEnemy.png" Width="60" Height="100" Margin="155,71,1385,909"/>
-            <Image Source="Assets/bomb-128.png" Width="120" Height="100" Margin="797,490,683,490"/>
-            <Grid Grid.Column="1" Height="156.7" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <Image Source="Assets/map.jpg" Stretch="Fill" Grid.ColumnSpan="5" Grid.RowSpan="5" PointerPressed="PointerPressed_CCImg" PointerReleased="PointerReleased_CCImg" PointerMoved="PointerMoved_CCImg" />
+            <Image Source="Assets/InfluenceAlly.png" Stretch="Uniform" Width="400" Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="3" Grid.RowSpan="2"/>
+            <Image Source="Assets/InfluenceEnemy.png" Stretch="Uniform" Width="400" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Grid.RowSpan="2"/>
+            <Image Source="Assets/BombLocation.png" Stretch="Uniform" Width="400" Grid.Column="2" Grid.Row="2"/>
+            <Image Source="Assets/baseAlly.png" Width="60" Height="100" Grid.Column="4" Grid.Row="4"/>
+            <Image Source="Assets/baseEnemy.png" Width="60" Height="100"/>
+            <Image Source="Assets/bomb-128.png" Width="120" Height="100" Grid.Column="2" Grid.Row="2"/>
+            <Grid Height="156.7" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column="4">
                 <RelativePanel Background="LightBlue" Height="80" Width="150" CornerRadius="10,10,10,10" BorderThickness="3,3,3,3" BorderBrush="CornflowerBlue" Margin="13,39,13,38"/>
                 <TextBlock Name="Timer" Text="00:00" FocusVisualPrimaryBrush="Black" Foreground="Black" FontWeight="Bold" FontSize="48" VerticalAlignment="Center" HorizontalAlignment="Center"/>
             </Grid>
+            <Canvas x:Name="VehicleMap" PointerPressed="PointerPressed_CCImg" PointerReleased="PointerReleased_CCImg" PointerMoved="PointerMoved_CCImg"/>
         </Grid>
     </Grid>
 </Page>

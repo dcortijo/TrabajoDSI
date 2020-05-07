@@ -61,6 +61,9 @@
     <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Eloy Moreno\PlanningView\PlanningView\Assets\jetYou.png">
       <PackagePath>Assets\jetYou.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Eloy Moreno\PlanningView\PlanningView\Assets\pistol_icon.png">
+      <PackagePath>Assets\pistol_icon.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Eloy Moreno\PlanningView\PlanningView\Assets\plus.png">
       <PackagePath>Assets\plus.png</PackagePath>
     </AppxPackagedFile>
@@ -69,6 +72,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Eloy Moreno\PlanningView\PlanningView\Assets\truck_purple.png">
       <PackagePath>Assets\truck_purple.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Eloy Moreno\PlanningView\PlanningView\Assets\VehicleSelectBackground.png">
+      <PackagePath>Assets\VehicleSelectBackground.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Eloy Moreno\PlanningView\PlanningView\Assets\WeaponSelectBackground.png">
+      <PackagePath>Assets\WeaponSelectBackground.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Eloy Moreno\PlanningView\PlanningView\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
