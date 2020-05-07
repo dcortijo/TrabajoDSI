@@ -1,0 +1,181 @@
+﻿<Page
+    x:Class="Hito3.Options"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Hito3"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Image Source="/Assets/Fondo.jpg" Stretch="Fill" Grid.RowSpan="3" Grid.ColumnSpan="3"/>
+        <RelativePanel Grid.Row="1" Grid.Column="1" Background="#BFCCDAED" BorderThickness="1" BorderBrush="RoyalBlue"></RelativePanel>
+
+        <Grid x:Name="Control_Tab" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Control type" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <Button x:Name="Controls_Switch" Click="Controls_Switch_Click" Content="Mouse and Keyboard" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" BorderBrush="Blue" />
+            <TextBlock Text="Mouse sensitivity" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <TextBlock Text="Inverted Y axis" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <TextBlock Text="Gallvanos callibration" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <TextBlock Text="Key speed" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <Slider Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black"/>
+            <Slider Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black"/>
+            <CheckBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="1" Foreground="Blue" />
+            <CheckBox Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="1" Foreground="Blue" />
+            
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="/Assets/Gallvanos.jpg"  HorizontalAlignment="Left" Grid.Column="1"/>
+            </Grid>
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="/Assets/ojo.png"  HorizontalAlignment="Left" Grid.Column="1"/>
+            </Grid>
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="/Assets/Gallvanos.jpg"  HorizontalAlignment="Left" Grid.Column="1"/>
+            </Grid>
+            <Grid Grid.Row="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="/Assets/Raton.png"  HorizontalAlignment="Left" Grid.Column="1"/>
+            </Grid>
+
+        </Grid>
+
+        <Grid x:Name="Sound_Tab" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Voices" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <TextBlock Text="Music" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <TextBlock Text="Effects" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <Slider Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black"/>
+            <Slider Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black"/>
+            <Slider Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black"/>
+        </Grid>
+
+        <Grid x:Name="Graphic_Tab" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Visible">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Resolution" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <Slider Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black"/>
+            <TextBlock Text="Brightness" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <Slider Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black"/>
+            <TextBlock Text="Colorblind Mode" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <CheckBox Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="1" Foreground="Blue" />
+            <TextBlock Text="Fullscreen" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <CheckBox Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="1" Foreground="Blue" />
+            <TextBlock Text="Gallvanos Mode" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <CheckBox Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="1" Foreground="Blue" />
+        </Grid>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button Content="Main Menu" BorderThickness="1" BorderBrush="RoyalBlue" Foreground="Blue" x:Name="Exit_Button" Click="Exit_Button_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#E5DAE8FC"/>
+        </Grid>
+        
+        <Grid Grid.RowSpan="1" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button Click="Graphics_Click" Content="Graphics" BorderThickness="1" BorderBrush="RoyalBlue" x:Name="Graphics" Grid.Column="0" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#BFCCDAED" FontSize="12" FontStretch="Undefined" Foreground="Blue" FocusVisualSecondaryBrush="White"/>
+            <Button Click="Sound_Click" Content="Sound" BorderThickness="1" BorderBrush="RoyalBlue" x:Name="Sound" Grid.Column="2" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#BFCCDAED" FontSize="12" FontStretch="Undefined" Foreground="Blue" FocusVisualSecondaryBrush="White"/>
+            <Button Click="Controls_Click" Content="Controls" BorderThickness="1" BorderBrush="RoyalBlue" x:Name="Controls" Grid.Column="4" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#BFCCDAED" FontSize="12" FontStretch="Undefined" Foreground="Blue" FocusVisualSecondaryBrush="White" />
+
+            <Button BorderThickness="1" BorderBrush="RoyalBlue" x:Name="Language" Grid.Column="6" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#BFCCDAED" FontSize="12" FontStretch="Undefined" Foreground="Blue">
+                <Image Source="/Assets/UK.png" Stretch="Fill"/>
+            </Button>
+            
+            <Image Source="/Assets/mando.png"  Grid.Column="4" Grid.Row="1" HorizontalAlignment="Left"/>
+            <Image Source="/Assets/pantalla.png"  Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left"/>
+            <Image Source="/Assets/audio.png"  Grid.Column="2" Grid.Row="1" HorizontalAlignment="Left"/>
+        </Grid>
+
+    </Grid>
+</Page>
