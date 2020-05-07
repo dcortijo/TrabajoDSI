@@ -1,0 +1,85 @@
+﻿<Page
+    x:Class="DSI_First_Person.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DSI_First_Person"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Image VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Stretch="Fill" Source="Assets/jet.jpg"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="11*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="10*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="17*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="12*"/>
+            </Grid.RowDefinitions>
+
+            <Border VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="4" Grid.Column="0" Background="LightGray" CornerRadius="10" Opacity="0.8" Padding="10, 5">
+                <TextBlock x:Name="clock" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Placeholder" FontSize="25*"/>
+            </Border>
+            <Image VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Stretch="Fill" Grid.Row="6" Grid.Column="0" Source="Assets/minimap.jpg"/>
+            <Grid Grid.Row="6" Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Row="2" Grid.Column="1" Source="Assets/jetIcon.png"/>
+            </Grid>
+            <Grid Grid.Row="6" Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="7*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="1" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="White" CornerRadius="15"  Opacity="0.8" Padding="0,30,0,0">
+                    <TextBlock x:Name="healthText" VerticalAlignment="Center" HorizontalAlignment="Center" Text="100%" FontSize="35*" Foreground="Green" FontWeight="Bold"/>
+                </Border>
+                <Border x:Name="healthBar" Grid.Row="1" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Center" Background="Green" CornerRadius="10" Margin="10,12,10,0" Width="130">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Border>
+            </Grid>
+            <Grid Grid.Row="6" Grid.Column="6">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="7*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="1" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="Yellow" CornerRadius="15" Opacity="0.7"/>
+                <Image Grid.Row="1" Grid.Column="0" Source="Assets/bomb.png" Margin="10"/>
+
+            </Grid>
+
+            <Border VerticalAlignment="Center" HorizontalAlignment="Stretch" Grid.Row="2" Grid.Column="4" Background="Yellow" CornerRadius="5"  Opacity="0.8">
+                <TextBlock/>
+            </Border>
+            <Image VerticalAlignment="Top" HorizontalAlignment="Stretch" Stretch="Fill" Grid.Row="0" Grid.Column="8" Source="Assets/vehicles.png"/>
+        </Grid>
+        <Image x:Name="expandedMap" Opacity="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Stretch="Fill" Source="Assets/minimap.jpg"/>
+        <Grid Grid.Row="6" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="8*"/>
+            </Grid.ColumnDefinitions>
+            <Image x:Name="expandedJet" Opacity="0" Grid.Row="2" Grid.Column="1" Source="Assets/jetIcon.png"/>
+        </Grid>
+    </Grid>
+</Page>
