@@ -153,6 +153,8 @@
     <Content Include="Assets\bomb-128.png" />
     <Content Include="Assets\bomb.png" />
     <Content Include="Assets\BombLocation.png" />
+    <Content Include="Assets\carAlly.png" />
+    <Content Include="Assets\carEnemy.png" />
     <Content Include="Assets\carYou.png" />
     <Content Include="Assets\Cruz.png" />
     <Content Include="Assets\Fondo.jpg" />
@@ -161,6 +163,8 @@
     <Content Include="Assets\InfluenceAlly.png" />
     <Content Include="Assets\InfluenceEnemy.png" />
     <Content Include="Assets\jet.jpg" />
+    <Content Include="Assets\jetAlly.png" />
+    <Content Include="Assets\jetEnemy.png" />
     <Content Include="Assets\jetIcon.png" />
     <Content Include="Assets\jetYou.png" />
     <Content Include="Assets\mando.png" />
@@ -171,6 +175,8 @@
     <Content Include="Assets\pistol_icon.png" />
     <Content Include="Assets\plus.png" />
     <Content Include="Assets\Raton.png" />
+    <Content Include="Assets\shipAlly.png" />
+    <Content Include="Assets\shipEnemy.png" />
     <Content Include="Assets\shipYou.png" />
     <Content Include="Assets\truck_purple.png" />
     <Content Include="Assets\UK.png" />

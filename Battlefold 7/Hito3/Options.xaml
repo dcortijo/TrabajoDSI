@@ -58,7 +58,7 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="4*"/>
                 </Grid.ColumnDefinitions>
-                <Image Source="/Assets/Gallvanos.jpg"  HorizontalAlignment="Left" Grid.Column="1"/>
+                <Image Source="/Assets/Raton.png"  HorizontalAlignment="Left" Grid.Column="1"/>
             </Grid>
             <Grid Grid.Row="3">
                 <Grid.ColumnDefinitions>
