@@ -157,6 +157,7 @@
     <Content Include="Assets\carEnemy.png" />
     <Content Include="Assets\carYou.png" />
     <Content Include="Assets\Cruz.png" />
+    <Content Include="Assets\Flag.png" />
     <Content Include="Assets\Fondo.jpg" />
     <Content Include="Assets\Gallvanos.jpg" />
     <Content Include="Assets\helicopter_purple.png" />

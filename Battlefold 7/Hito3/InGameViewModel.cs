@@ -15,6 +15,9 @@ namespace Hito3
         public RotateTransform Rotacion;
         public int Angulo = 0;
 
+        public int healthBar;
+        public int overheatBar;
+
         public InGameVehicleViewModel(InGameVehicle vehicle)
         {
             Id = vehicle.Id;
@@ -25,10 +28,12 @@ namespace Hito3
             team = vehicle.team;
 
             maxHealth = vehicle.maxHealth;
-            health = vehicle.maxHealth;
+            health = vehicle.health;
+            healthBar = (int)(100 * (health / maxHealth));
 
             maxOverheat = vehicle.maxOverheat;
             overheat = vehicle.overheat;
+            overheatBar = (int)(100 * (overheat / maxOverheat));
 
             X = vehicle.X;
             Y = vehicle.Y;
@@ -42,10 +47,7 @@ namespace Hito3
             CCImg = new ContentControl();
             CCImg.Content = Img;
             CCImg.UseSystemFocusVisuals = true;
-            //CCImg.Visibility = Windows.UI.Xaml.Visibility.Visible;//.Collapsed;
-            //Mapa.Children.Add(CCImg);
-            //Mapa.Children.Last().SetValue(Canvas.LeftProperty, X - 25);
-            //Mapa.Children.Last().SetValue(Canvas.TopProperty, Y - 25);
+
             Rotacion = new RotateTransform();
             Rotacion.Angle = Angulo;
             Rotacion.CenterX = 25;

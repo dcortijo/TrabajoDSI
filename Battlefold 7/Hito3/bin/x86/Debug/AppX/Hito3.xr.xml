@@ -160,6 +160,7 @@
       <RootMethod Name="SetAttachedFlyout" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Flyout">
+      <RootProperty Name="Placement" />
       <RootProperty Name="Content" />
       <RootEvent Name="Closed" />
     </RootType>

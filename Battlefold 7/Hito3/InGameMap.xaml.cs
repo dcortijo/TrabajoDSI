@@ -32,7 +32,6 @@ namespace Hito3
         //Vehículo activo
         int activeIndex = -1;
         int bombIndex = -1;
-        int pointerY;
 
         public InGameMap()
         {
@@ -67,23 +66,32 @@ namespace Hito3
                     MapCanvas.Children.Last().SetValue(Canvas.LeftProperty, VMitem.X);
                     MapCanvas.Children.Last().SetValue(Canvas.TopProperty, VMitem.Y);
 
-                    HealthCanvas.Children.Add(new TextBlock());
-                    (HealthCanvas.Children.Last() as TextBlock).Text = VMitem.health.ToString();
-                    (HealthCanvas.Children.Last() as TextBlock).FontSize = 15;
-                    (HealthCanvas.Children.Last() as TextBlock).TextAlignment = TextAlignment.Center;
-                    (HealthCanvas.Children.Last() as TextBlock).Foreground = new SolidColorBrush(Windows.UI.Colors.Green);
-                    HealthCanvas.Children.Last().SetValue(Canvas.LeftProperty, VMitem.X);
-                    HealthCanvas.Children.Last().SetValue(Canvas.TopProperty, VMitem.Y);
+                    HealthCanvas.Children.Add(new Border());
+                    (HealthCanvas.Children.Last() as Border).Height = VMitem.healthBar / 3;
+                    (HealthCanvas.Children.Last() as Border).Width = 6;
+                    (HealthCanvas.Children.Last() as Border).Background = new SolidColorBrush(Windows.UI.Colors.Green);
+                    (HealthCanvas.Children.Last() as Border).CornerRadius = new Windows.UI.Xaml.CornerRadius(5);
+                    HealthCanvas.Children.Last().SetValue(Canvas.LeftProperty, VMitem.X - 5);
+                    HealthCanvas.Children.Last().SetValue(Canvas.TopProperty, VMitem.Y + 10);
 
                     if (VMitem.team == InGameVehicle.aligment.yours)
                     {
-                        AmmoCanvas.Children.Add(new TextBlock());
-                        (AmmoCanvas.Children.Last() as TextBlock).Text = VMitem.overheat.ToString();
-                        (AmmoCanvas.Children.Last() as TextBlock).FontSize = 15;
-                        (AmmoCanvas.Children.Last() as TextBlock).TextAlignment = TextAlignment.Center;
-                        (AmmoCanvas.Children.Last() as TextBlock).Foreground = new SolidColorBrush(Windows.UI.Colors.Red);
-                        AmmoCanvas.Children.Last().SetValue(Canvas.LeftProperty, VMitem.X);
-                        AmmoCanvas.Children.Last().SetValue(Canvas.TopProperty, VMitem.Y + 30);
+                        AmmoCanvas.Children.Add(new Border());
+                        (AmmoCanvas.Children.Last() as Border).Height = VMitem.overheatBar / 3;
+                        (AmmoCanvas.Children.Last() as Border).Width = 6;
+                        (AmmoCanvas.Children.Last() as Border).Background = new SolidColorBrush(Windows.UI.Colors.Red);
+                        (AmmoCanvas.Children.Last() as Border).Visibility = Visibility.Collapsed;
+                        AmmoCanvas.Children.Last().SetValue(Canvas.LeftProperty, VMitem.X - 15);
+                        AmmoCanvas.Children.Last().SetValue(Canvas.TopProperty, VMitem.Y + 10);
+
+                        FlagsCanvas.Children.Add(new Image());
+                        string aa = System.IO.Directory.GetCurrentDirectory() + "\\" + "Assets\\Flag.png";
+                        (FlagsCanvas.Children.Last() as Image).Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(aa));
+                        (FlagsCanvas.Children.Last() as Image).Visibility = Visibility.Collapsed;
+                        (FlagsCanvas.Children.Last() as Image).Width = 35;
+                        (FlagsCanvas.Children.Last() as Image).Height = 35;
+                        FlagsCanvas.Children.Last().SetValue(Canvas.LeftProperty, VMitem.X);
+                        FlagsCanvas.Children.Last().SetValue(Canvas.TopProperty, VMitem.Y);
                     }
 
                     i++;
@@ -136,13 +144,18 @@ namespace Hito3
         {
             if (((e.OriginalSource as Image).Parent as ContentControl) != null)
             {
-                activeIndex = MapCanvas.Children.IndexOf((e.OriginalSource as Image).Parent as ContentControl);
-                if (activeIndex < 4 && activeIndex > -1)
+                int newIndex = MapCanvas.Children.IndexOf((e.OriginalSource as Image).Parent as ContentControl);
+                if (newIndex < ListaYourVeh.Count() && newIndex > -1)
                 {
-                    ListViewVehicles.SelectedIndex = activeIndex;
+                    activeIndex = newIndex;
+                    ListViewVehicles.SelectedIndex = newIndex;
+                    for(int i = 0; i < ListaYourVeh.Count(); ++i)
+                    {
+                        if (i != activeIndex) AmmoCanvas.Children[i].Visibility = Visibility.Collapsed;
+                        else AmmoCanvas.Children[i].Visibility = Visibility.Visible;
+                    }
                 }
             }
-            else activeIndex = -1;
         }
 
         private void ControlVehicleKeyDown(object sender, KeyRoutedEventArgs e)
@@ -196,12 +209,12 @@ namespace Hito3
         {
             (MapCanvas.Children[activeIndex] as ContentControl).SetValue(Canvas.LeftProperty, ListaVeh[activeIndex].X);
             (MapCanvas.Children[activeIndex] as ContentControl).SetValue(Canvas.TopProperty, ListaVeh[activeIndex].Y);
-            HealthCanvas.Children[activeIndex].SetValue(Canvas.LeftProperty, ListaVeh[activeIndex].X);
-            HealthCanvas.Children[activeIndex].SetValue(Canvas.TopProperty, ListaVeh[activeIndex].Y);
+            HealthCanvas.Children[activeIndex].SetValue(Canvas.LeftProperty, ListaVeh[activeIndex].X - 5);
+            HealthCanvas.Children[activeIndex].SetValue(Canvas.TopProperty, ListaVeh[activeIndex].Y + 10);
             if(ListaVeh[activeIndex].team == InGameVehicle.aligment.yours)
             {
-                AmmoCanvas.Children[activeIndex].SetValue(Canvas.LeftProperty, ListaVeh[activeIndex].X);
-                AmmoCanvas.Children[activeIndex].SetValue(Canvas.TopProperty, ListaVeh[activeIndex].Y + 30);
+                AmmoCanvas.Children[activeIndex].SetValue(Canvas.LeftProperty, ListaVeh[activeIndex].X - 15);
+                AmmoCanvas.Children[activeIndex].SetValue(Canvas.TopProperty, ListaVeh[activeIndex].Y + 10);
             }
             if(bombIndex > -1)
             {

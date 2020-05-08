@@ -21,7 +21,6 @@ namespace Hito3
                 damage = 0,
                 weaponDescription = "",
                 weaponImage = "Assets\\plus.png"
-
             },
             new PlanningViewWeapon()
             {
@@ -29,7 +28,6 @@ namespace Hito3
                 damage = 20,
                 weaponDescription = "Mucho rango, poco daño.",
                 weaponImage = "Assets\\pistol_icon.png"
-
             }
         };
 

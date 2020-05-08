@@ -36,7 +36,7 @@ namespace Hito3
                 description = "Barco lento pero duro.",
                 totalHealth = 200,
                 maxSpeed = 60,
-                        weapon = PlanningViewWeapon.GetWeapon(0)
+                weapon = PlanningViewWeapon.GetWeapon(0)
 
     },
             new PlanningViewVehicle()
@@ -45,7 +45,7 @@ namespace Hito3
                 description = "Coche rápido.",
                 totalHealth = 150,
                 maxSpeed = 50,
-                        weapon = PlanningViewWeapon.GetWeapon(0)
+                weapon = PlanningViewWeapon.GetWeapon(0)
 
     },
             new PlanningViewVehicle()
@@ -54,19 +54,17 @@ namespace Hito3
                 description = "Jet rápido pero frágil.",
                 totalHealth = 50,
                 maxSpeed = 90,
-                        weapon = PlanningViewWeapon.GetWeapon(0)
-
+                weapon = PlanningViewWeapon.GetWeapon(0)
     },
         };
         public static List<PlanningViewVehicle> vehicles = new List<PlanningViewVehicle>() {
             new PlanningViewVehicle()
             {
                 vehicleImage = "Assets\\plus.png",
-                description = "ADASD",
+                description = "",
                 totalHealth = 0,
                 maxSpeed = 0,
-                                weapon = PlanningViewWeapon.GetWeapon(0)
-
+                weapon = PlanningViewWeapon.GetWeapon(0)
             },
             new PlanningViewVehicle()
             {
@@ -74,26 +72,23 @@ namespace Hito3
                 description = "",
                 totalHealth = 0,
                 maxSpeed = 0,
-                    weapon = PlanningViewWeapon.GetWeapon(0)
-
-},
+                weapon = PlanningViewWeapon.GetWeapon(0)
+            },
             new PlanningViewVehicle()
             {
                 vehicleImage = "Assets\\plus.png",
                 description = "",
                 totalHealth = 0,
                 maxSpeed = 0,
-                    weapon = PlanningViewWeapon.GetWeapon(0)
-
-},
+                weapon = PlanningViewWeapon.GetWeapon(0)
+            },
             new PlanningViewVehicle()
             {
                 vehicleImage = "Assets\\plus.png",
                 description = "",
                 totalHealth = 0,
                 maxSpeed = 0,
-                                weapon = PlanningViewWeapon.GetWeapon(0)
-
+                weapon = PlanningViewWeapon.GetWeapon(0)
     }
 };
 
