@@ -7,7 +7,66 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+    <Page.Resources>
+        <Flyout x:Name="Friends_Flyout">
+            <StackPanel>
+                <TextBlock Name="VehicleDescription" Text="Friends"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    
+                    <Button  Content="Jose" IsEnabled="False" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch"/>
+                    <TextBlock Text="Ofline" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
+                    <Button  Content="Alfredo" IsEnabled="False" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Stretch"/>
+                    <TextBlock Text="Ofline" Grid.Column="3" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                    <Button  Content="Juan" IsEnabled="False" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Stretch"/>
+                    <TextBlock Text="Ofline" Grid.Column="3" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                    <Button  Content="Tomás" IsEnabled="False" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Stretch"/>
+                    <TextBlock Text="Ofline" Grid.Column="3" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                    <Button  Content="Francisco" IsEnabled="True" Grid.Row="5" Grid.Column="0" HorizontalAlignment="Stretch"/>
+                    <TextBlock Text="Online" Grid.Column="3" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                    <Button  Content="Antonio" IsEnabled="False" Grid.Row="6" Grid.Column="0" HorizontalAlignment="Stretch"/>
+                    <TextBlock Text="Ofline" Grid.Column="3" Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                    <Button  Content="Pedro" IsEnabled="True" Grid.Row="7" Grid.Column="0" HorizontalAlignment="Stretch"/>
+                    <TextBlock Text="Online" Grid.Column="3" Grid.Row="7" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                    <Button  Content="Mochi" IsEnabled="False" Grid.Row="8" Grid.Column="0" HorizontalAlignment="Stretch"/>
+                    <TextBlock Text="Ofline" Grid.Column="3" Grid.Row="8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                    <Button  Content="Eloy" IsEnabled="False" Grid.Row="9" Grid.Column="0" HorizontalAlignment="Stretch"/>
+                    <TextBlock Text="Ofline" Grid.Column="3" Grid.Row="9" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                    <Button  Content="Gallvanos" IsEnabled="True" Grid.Row="10" Grid.Column="0" HorizontalAlignment="Stretch"/>
+                    <TextBlock Text="Online" Grid.Column="3" Grid.Row="10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                </Grid>
+            </StackPanel>
+        </Flyout>
+    </Page.Resources>
+    
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -49,31 +108,25 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Button x:Name="Friends" HorizontalAlignment="Stretch" Click="Button_Click" Grid.Row="3" Grid.RowSpan="3" VerticalAlignment="Stretch" Grid.Column="1"/>
+            <Button x:Name="Friends" HorizontalAlignment="Stretch" Click="Button_Click" Grid.Row="3" Grid.RowSpan="3" VerticalAlignment="Stretch" Grid.Column="1" Flyout="{StaticResource Friends_Flyout}"/>
         </Grid>
 
-        <TextBlock Text="BATTLEFOLD 7" HorizontalAlignment="Center" Margin="0,20,0,19" TextWrapping="Wrap" Foreground="#FFFFC70F" FontFamily="Courier New" FontWeight="Bold" FontSize="48" Grid.Column="1" Grid.ColumnSpan="6" Grid.RowSpan="2"/>
-        <Button x:Name="Play" HorizontalAlignment="Stretch" Click="Play_Button_Click" Grid.Row="2" Grid.Column="2" Grid.RowSpan="2" Grid.ColumnSpan="2" VerticalAlignment="Stretch"/>
-        <Button x:Name="Exit" HorizontalAlignment="Stretch" Click="Exit_Button_Click" Grid.Row="2" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="1" VerticalAlignment="Stretch"/>
-        
-        <StackPanel x:Name="Friends_Back" Grid.Column="5" Grid.ColumnSpan="3" Grid.Row="1" Grid.RowSpan="3" Background="#CCCCDAED" Visibility="Collapsed"/>
-
-        <Grid x:Name="Friends_Tab" HorizontalAlignment="Stretch" Grid.Column="5" Grid.ColumnSpan="3" Grid.Row="1" Grid.RowSpan="3" Visibility="Collapsed">
+        <Grid Grid.Row="2" Grid.Column="2" Grid.RowSpan="2" Grid.ColumnSpan="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
-                <RowDefinition Height="8*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="Exit_Friends" Click="Exit_Friends_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-                <Image Source="/Assets/Cruz.png"/>
-            </Button>
-            <TextBlock Text="Online Friends" Grid.Column="2" Foreground="Blue" VerticalAlignment="Center"/>
-            <TextBlock Text="Online Friends" Grid.Column="2" Foreground="Blue" VerticalAlignment="Center"/>
-            <TextBlock Text="Jose" Grid.Column="2" Grid.Row="2" Foreground="Blue" VerticalAlignment="Top"/>
+        <Button x:Name="Play" HorizontalAlignment="Stretch" Content="Play" Foreground="Blue" FontSize="80" FontFamily="Courier New" Click="Play_Button_Click" CornerRadius="100000" Grid.Row="1" Grid.Column="1" VerticalAlignment="Stretch"/>
+            
         </Grid>
-
+        <TextBlock Text="BATTLEFOLD 7" HorizontalAlignment="Center" Margin="0,20,0,19" TextWrapping="Wrap" Foreground="#FFFFC70F" FontFamily="Courier New" FontWeight="Bold" FontSize="100" Grid.Column="1" Grid.ColumnSpan="6" Grid.RowSpan="2"/>
+        <Button x:Name="Exit" Content="Exit" Foreground="Blue" FontSize="50" FontFamily="Courier New" HorizontalAlignment="Stretch" Click="Exit_Button_Click" Grid.Row="2" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="1" VerticalAlignment="Stretch"/>
+       
     </Grid>
 </Page>

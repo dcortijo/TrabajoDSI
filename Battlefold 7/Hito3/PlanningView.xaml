@@ -55,6 +55,7 @@
                     </FlyoutBase.AttachedFlyout>
                     <Button x:Name="VehicleButton" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="15,15,15,15" FocusVisualPrimaryBrush="Transparent" Foreground="Transparent" FocusVisualSecondaryBrush="#00000000" BorderBrush="#00000000" Background="#00000000"/>
                 </Grid>
+                
                 <Grid Tapped="WeaponButton_Tapped" Grid.Row="1" Grid.Column="1">
                     <FlyoutBase.AttachedFlyout>
                         <Flyout x:Name="WeaponFlyout" Closed="WeaponFlyout_Closed">
@@ -89,6 +90,7 @@
             </Grid>
         </DataTemplate>
     </Page.Resources>
+    
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>

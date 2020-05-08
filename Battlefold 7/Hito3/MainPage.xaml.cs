@@ -35,8 +35,6 @@ namespace Hito3
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Friends_Back.Visibility = Visibility.Visible;
-            Friends_Tab.Visibility = Visibility.Visible;
         }
 
         private void Play_Button_Click(object sender, RoutedEventArgs e)
@@ -47,12 +45,6 @@ namespace Hito3
         private void Exit_Button_Click(object sender, RoutedEventArgs e)
         {
             CoreApplication.Exit();
-        }
-
-        private void Exit_Friends_Click(object sender, RoutedEventArgs e)
-        {
-            Friends_Back.Visibility = Visibility.Collapsed;
-            Friends_Tab.Visibility = Visibility.Collapsed;
         }
     }
 }
