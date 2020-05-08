@@ -19,11 +19,11 @@ namespace Hito3
         public weaponType weapon;
         public aligment team;
 
-        public int maxHealth;
-        public int health;
+        public double maxHealth;
+        public double health;
 
-        public int maxOverheat;
-        public int overheat;
+        public double maxOverheat;
+        public double overheat;
 
         public int X { get; set; }
         public int Y { get; set; }
@@ -131,7 +131,7 @@ namespace Hito3
                 maxHealth = 200,
                 health = 80,
 
-                maxOverheat = 0,
+                maxOverheat = 1,
                 overheat = 0,
 
                 X = 300,
