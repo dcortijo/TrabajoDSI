@@ -52,6 +52,12 @@
     <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\BombLocation.png">
       <PackagePath>Assets\BombLocation.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\carAlly.png">
+      <PackagePath>Assets\carAlly.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\carEnemy.png">
+      <PackagePath>Assets\carEnemy.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\carYou.png">
       <PackagePath>Assets\carYou.png</PackagePath>
     </AppxPackagedFile>
@@ -66,6 +72,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\InfluenceEnemy.png">
       <PackagePath>Assets\InfluenceEnemy.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\jetAlly.png">
+      <PackagePath>Assets\jetAlly.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\jetEnemy.png">
+      <PackagePath>Assets\jetEnemy.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\jetIcon.png">
       <PackagePath>Assets\jetIcon.png</PackagePath>
@@ -91,6 +103,12 @@
     <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\Raton.png">
       <PackagePath>Assets\Raton.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\shipAlly.png">
+      <PackagePath>Assets\shipAlly.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\shipEnemy.png">
+      <PackagePath>Assets\shipEnemy.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\shipYou.png">
       <PackagePath>Assets\shipYou.png</PackagePath>
     </AppxPackagedFile>
@@ -99,6 +117,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\UK.png">
       <PackagePath>Assets\UK.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\vehicles.png">
+      <PackagePath>Assets\vehicles.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\VehicleSelectBackground.png">
       <PackagePath>Assets\VehicleSelectBackground.png</PackagePath>

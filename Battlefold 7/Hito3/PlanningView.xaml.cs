@@ -25,7 +25,7 @@ namespace Hito3
     {
         public ObservableCollection<PlanningViewVehicleVM> ListaVehiculos { get; } = new ObservableCollection<PlanningViewVehicleVM>();
         DispatcherTimer timer;
-        int timeLeft = 10;
+        int timeLeft = 1000;
         int selectedVehicle = 0;
 
         public PlanningView()
@@ -198,7 +198,6 @@ namespace Hito3
         private void VehicleButton_Click(object sender, RoutedEventArgs e)
         {
             FlyoutBase.ShowAttachedFlyout(sender as FrameworkElement);
-
         }
 
         private void WeaponButton_Tapped(object sender, TappedRoutedEventArgs e)
