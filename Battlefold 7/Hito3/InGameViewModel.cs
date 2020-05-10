@@ -38,6 +38,8 @@ namespace Hito3
             X = vehicle.X;
             Y = vehicle.Y;
 
+            direction = vehicle.direction;
+
             Img = new Image();
             string s = System.IO.Directory.GetCurrentDirectory() + "\\" + vehicle.Imagen;
             Img.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));

@@ -32,8 +32,9 @@ namespace Hito3
         //Vehículo activo
         int activeIndex = -1;
         int bombIndex = -1;
-        DispatcherTimer timer;
+        DispatcherTimer clockTimer;
         int timeLeft = 200;
+        DispatcherTimer updateTimer;
 
         public InGameMap()
         {
@@ -166,6 +167,8 @@ namespace Hito3
                 FlagsCanvas.Children[activeIndex].SetValue(Canvas.TopProperty, e.GetCurrentPoint(this).Position.Y - 17);
                 FlagsCanvas.Children[activeIndex].SetValue(Canvas.LeftProperty, e.GetCurrentPoint(this).Position.X - 17);
                 FlagsCanvas.Children[activeIndex].Visibility = Visibility.Visible;
+                ListaVeh[activeIndex].direction[0] = (int)(e.GetCurrentPoint(this).Position.X - 17) - ListaVeh[activeIndex].X;
+                ListaVeh[activeIndex].direction[1] = (int)(e.GetCurrentPoint(this).Position.Y - 17) - ListaVeh[activeIndex].Y;
             }
         }
 
@@ -187,7 +190,7 @@ namespace Hito3
                             MapCanvas.Children.Last().Visibility = Visibility.Collapsed; 
                         }
                         break;
-                    case Windows.System.VirtualKey.W:
+                    /*case Windows.System.VirtualKey.W:
                         ListaVeh[activeIndex].Y -= 5;
                         break;
                     case Windows.System.VirtualKey.A:
@@ -198,12 +201,12 @@ namespace Hito3
                         break;
                     case Windows.System.VirtualKey.D:
                         ListaVeh[activeIndex].X += 5;
-                        break;
+                        break;*/
                     case Windows.System.VirtualKey.F:
                         this.Frame.Navigate(typeof(FirstPerson));
                         break;
                 }
-                reposition();
+                //reposition();
             }
         }
 
@@ -216,21 +219,21 @@ namespace Hito3
         private List<Gamepad> myGamepads = new List<Gamepad>();
         private Gamepad mainGamepad;*/
 
-        void reposition()
+        void reposition(int i)
         {
-            (MapCanvas.Children[activeIndex] as ContentControl).SetValue(Canvas.LeftProperty, ListaVeh[activeIndex].X);
-            (MapCanvas.Children[activeIndex] as ContentControl).SetValue(Canvas.TopProperty, ListaVeh[activeIndex].Y);
-            HealthCanvas.Children[activeIndex].SetValue(Canvas.LeftProperty, ListaVeh[activeIndex].X - 5);
-            HealthCanvas.Children[activeIndex].SetValue(Canvas.TopProperty, ListaVeh[activeIndex].Y + 10);
-            if(ListaVeh[activeIndex].team == InGameVehicle.aligment.yours)
+            (MapCanvas.Children[i] as ContentControl).SetValue(Canvas.LeftProperty, ListaVeh[i].X);
+            (MapCanvas.Children[i] as ContentControl).SetValue(Canvas.TopProperty, ListaVeh[i].Y);
+            HealthCanvas.Children[i].SetValue(Canvas.LeftProperty, ListaVeh[i].X - 5);
+            HealthCanvas.Children[i].SetValue(Canvas.TopProperty, ListaVeh[i].Y + 10);
+            if(ListaVeh[i].team == InGameVehicle.aligment.yours)
             {
-                AmmoCanvas.Children[activeIndex].SetValue(Canvas.LeftProperty, ListaVeh[activeIndex].X - 15);
-                AmmoCanvas.Children[activeIndex].SetValue(Canvas.TopProperty, ListaVeh[activeIndex].Y + 10);
+                AmmoCanvas.Children[i].SetValue(Canvas.LeftProperty, ListaVeh[i].X - 15);
+                AmmoCanvas.Children[i].SetValue(Canvas.TopProperty, ListaVeh[i].Y + 10);
             }
             if(bombIndex > -1)
             {
-                MapCanvas.Children.Last().SetValue(Canvas.LeftProperty, ListaVeh[bombIndex].X + 40);
-                MapCanvas.Children.Last().SetValue(Canvas.TopProperty, ListaVeh[bombIndex].Y);
+                MapCanvas.Children.Last().SetValue(Canvas.LeftProperty, ListaVeh[i].X + 40);
+                MapCanvas.Children.Last().SetValue(Canvas.TopProperty, ListaVeh[i].Y);
                 checkIfBombInBase();
             }
         }
@@ -265,12 +268,17 @@ namespace Hito3
 
         private void DispatcherTimerSetup()
         {
-            timer = new DispatcherTimer();
-            timer.Interval = new TimeSpan(0, 0, 1);
-            timer.Tick += TimerTick;
-            timer.Start();
+            clockTimer = new DispatcherTimer();
+            clockTimer.Interval = new TimeSpan(0, 0, 1);
+            clockTimer.Tick += TimerTick;
+            clockTimer.Start();
             Timer.Text = ((timeLeft / 60) <= 9 ? "0" : "") + (timeLeft / 60).ToString() + ":"
                 + ((timeLeft % 60) <= 9 ? "0" : "") + (timeLeft % 60).ToString();
+
+            updateTimer = new DispatcherTimer();
+            updateTimer.Interval = new TimeSpan(0, 0, 0, 0, 200);
+            updateTimer.Tick += UpdateTick;
+            updateTimer.Start();
         }
 
         void TimerTick(object sender, object e)
@@ -283,7 +291,27 @@ namespace Hito3
                 + ((timeLeft % 60) <= 9 ? "0" : "") + (timeLeft % 60).ToString();
             if (timeLeft == 0)
             {
-                timer.Stop();
+                clockTimer.Stop();
+            }
+        }
+
+        void UpdateTick(object sender, object e)
+        {
+            if (timeLeft == 0)
+            {
+                updateTimer.Stop();
+            }
+            else
+            {
+                for(int i = 0; i < ListaYourVeh.Count(); ++i)
+                {
+                    if(ListaVeh[i].direction[0] != 0 && ListaVeh[i].direction[1] != 0)
+                    {
+                        ListaVeh[i].X += ListaVeh[i].direction[0];
+                        ListaVeh[i].Y += ListaVeh[i].direction[1];
+                    }
+                    reposition(i);
+                }
             }
         }
     }
