@@ -32,6 +32,8 @@ namespace Hito3
         //Vehículo activo
         int activeIndex = -1;
         int bombIndex = -1;
+        DispatcherTimer timer;
+        int timeLeft = 200;
 
         public InGameMap()
         {
@@ -76,6 +78,8 @@ namespace Hito3
 
                     if (VMitem.team == InGameVehicle.aligment.yours)
                     {
+                        MapCanvas.Children.Last().PointerPressed += ClickedVeh;
+
                         AmmoCanvas.Children.Add(new Border());
                         (AmmoCanvas.Children.Last() as Border).Height = VMitem.overheatBar / 3;
                         (AmmoCanvas.Children.Last() as Border).Width = 6;
@@ -135,26 +139,33 @@ namespace Hito3
                         myGamepads.RemoveAt(indexRemoved);
                     }
                 }
-            };
+            };*/
 
-            DispatcherTimerSetup();*/
+            DispatcherTimerSetup();
+        }
+
+        private void ClickedVeh(object sender, PointerRoutedEventArgs e)
+        {
+            int newIndex = MapCanvas.Children.IndexOf((e.OriginalSource as Image).Parent as ContentControl);
+            if (newIndex < ListaYourVeh.Count() && newIndex > -1)
+            {
+                activeIndex = newIndex;
+                ListViewVehicles.SelectedIndex = newIndex;
+                for (int i = 0; i < ListaYourVeh.Count(); ++i)
+                {
+                    if (i != activeIndex) AmmoCanvas.Children[i].Visibility = Visibility.Collapsed;
+                    else AmmoCanvas.Children[i].Visibility = Visibility.Visible;
+                }
+            }
         }
 
         private void ClickedMap(object sender, PointerRoutedEventArgs e)
         {
-            if (((e.OriginalSource as Image).Parent as ContentControl) != null)
+            if (activeIndex != -1)
             {
-                int newIndex = MapCanvas.Children.IndexOf((e.OriginalSource as Image).Parent as ContentControl);
-                if (newIndex < ListaYourVeh.Count() && newIndex > -1)
-                {
-                    activeIndex = newIndex;
-                    ListViewVehicles.SelectedIndex = newIndex;
-                    for(int i = 0; i < ListaYourVeh.Count(); ++i)
-                    {
-                        if (i != activeIndex) AmmoCanvas.Children[i].Visibility = Visibility.Collapsed;
-                        else AmmoCanvas.Children[i].Visibility = Visibility.Visible;
-                    }
-                }
+                FlagsCanvas.Children[activeIndex].SetValue(Canvas.TopProperty, e.GetCurrentPoint(this).Position.Y - 17);
+                FlagsCanvas.Children[activeIndex].SetValue(Canvas.LeftProperty, e.GetCurrentPoint(this).Position.X - 17);
+                FlagsCanvas.Children[activeIndex].Visibility = Visibility.Visible;
             }
         }
 
@@ -249,6 +260,30 @@ namespace Hito3
             for (int i = 0; i < ListaVeh.Count(); ++i)
             {
                 ListaVeh[i].bomb = false;
+            }
+        }
+
+        private void DispatcherTimerSetup()
+        {
+            timer = new DispatcherTimer();
+            timer.Interval = new TimeSpan(0, 0, 1);
+            timer.Tick += TimerTick;
+            timer.Start();
+            Timer.Text = ((timeLeft / 60) <= 9 ? "0" : "") + (timeLeft / 60).ToString() + ":"
+                + ((timeLeft % 60) <= 9 ? "0" : "") + (timeLeft % 60).ToString();
+        }
+
+        void TimerTick(object sender, object e)
+        {
+            if (timeLeft > 0)
+                timeLeft--;
+            else if (timeLeft < 0)
+                timeLeft = 0;
+            Timer.Text = ((timeLeft / 60) <= 9 ? "0" : "") + (timeLeft / 60).ToString() + ":"
+                + ((timeLeft % 60) <= 9 ? "0" : "") + (timeLeft % 60).ToString();
+            if (timeLeft == 0)
+            {
+                timer.Stop();
             }
         }
     }

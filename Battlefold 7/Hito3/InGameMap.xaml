@@ -32,15 +32,19 @@
         <Border Grid.Row="1" Background="LightBlue"></Border>
         <ScrollViewer ZoomMode="Enabled">
             <Grid>
-                <Image x:Name="MapImg" Source="Assets/map.jpg" Stretch="Fill"/>
+                <Image x:Name="MapImg" Source="Assets/map.jpg" Stretch="Fill" PointerPressed="ClickedMap"/>
                 <Canvas x:Name="BaseCanvas">
                     <Image x:Name="EnemyBase" Canvas.Left="100" Canvas.Top="100" Source="Assets/baseEnemy.png" Width="100" Height="100"/>
-                    <Image x:Name="AllyBase" Canvas.Left="800" Canvas.Top="600" Source="Assets/baseAlly.png" Width="100" Height="100"/>
+                    <Image x:Name="AllyBase" Canvas.Left="1292" Canvas.Top="624" Source="Assets/baseAlly.png" Width="100" Height="100"/>
                 </Canvas>
-                <Canvas x:Name="MapCanvas" PointerPressed="ClickedMap"/>
+                <Canvas x:Name="MapCanvas" />
                 <Canvas x:Name="HealthCanvas"/>
                 <Canvas x:Name="AmmoCanvas"/>
                 <Canvas x:Name="FlagsCanvas"/>
+                <Grid Height="156.7" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column="4">
+                    <RelativePanel Background="LightBlue" Height="80" Width="150" CornerRadius="10,10,10,10" BorderThickness="3,3,3,3" BorderBrush="CornflowerBlue" Margin="13,39,13,38"/>
+                    <TextBlock Name="Timer" Text="00:00" FocusVisualPrimaryBrush="Black" Foreground="Black" FontWeight="Bold" FontSize="48" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Grid>
             </Grid>
         </ScrollViewer>
         <ListView x:Name="ListViewVehicles" ItemTemplate="{StaticResource ListViewVehicle}" ItemsSource="{x:Bind ListaYourVeh}" SelectionChanged="ListViewVehicles_SelectionChanged" Grid.Row="1" ScrollViewer.VerticalScrollBarVisibility="Disabled"  ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollMode="Enabled">
