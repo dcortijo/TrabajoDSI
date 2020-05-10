@@ -167,8 +167,10 @@ namespace Hito3
                 FlagsCanvas.Children[activeIndex].SetValue(Canvas.TopProperty, e.GetCurrentPoint(this).Position.Y - 17);
                 FlagsCanvas.Children[activeIndex].SetValue(Canvas.LeftProperty, e.GetCurrentPoint(this).Position.X - 17);
                 FlagsCanvas.Children[activeIndex].Visibility = Visibility.Visible;
-                ListaVeh[activeIndex].direction[0] = (int)(e.GetCurrentPoint(this).Position.X - 17) - ListaVeh[activeIndex].X;
-                ListaVeh[activeIndex].direction[1] = (int)(e.GetCurrentPoint(this).Position.Y - 17) - ListaVeh[activeIndex].Y;
+                ListaVeh[activeIndex].direction[0] = (e.GetCurrentPoint(this).Position.X - 17) - ListaVeh[activeIndex].X;
+                ListaVeh[activeIndex].direction[1] = (e.GetCurrentPoint(this).Position.Y - 17) - ListaVeh[activeIndex].Y;
+                ListaVeh[activeIndex].objective[0] = e.GetCurrentPoint(this).Position.X;
+                ListaVeh[activeIndex].objective[1] = e.GetCurrentPoint(this).Position.Y;
             }
         }
 
@@ -245,14 +247,14 @@ namespace Hito3
             {
                 if(ListaVeh[bombIndex].X < 200 && ListaVeh[bombIndex].X > 100 && ListaVeh[bombIndex].Y > 100 && ListaVeh[bombIndex].Y < 200)
                 {
-                    int i = ListaVeh[-1].X; //Crash
+                    double i = ListaVeh[-1].X; //Crash
                 }
             }
             else
             {
                 if (ListaVeh[bombIndex].X < 900 && ListaVeh[bombIndex].X > 800 && ListaVeh[bombIndex].Y > 600 && ListaVeh[bombIndex].Y < 700)
                 {
-                    int i = ListaVeh[-1].X; //Crash
+                    double i = ListaVeh[-1].X; //Crash
                 }
             }
             return result;
@@ -276,7 +278,7 @@ namespace Hito3
                 + ((timeLeft % 60) <= 9 ? "0" : "") + (timeLeft % 60).ToString();
 
             updateTimer = new DispatcherTimer();
-            updateTimer.Interval = new TimeSpan(0, 0, 0, 0, 200);
+            updateTimer.Interval = new TimeSpan(0, 0, 0, 0, 33);
             updateTimer.Tick += UpdateTick;
             updateTimer.Start();
         }
@@ -307,10 +309,17 @@ namespace Hito3
                 {
                     if(ListaVeh[i].direction[0] != 0 && ListaVeh[i].direction[1] != 0)
                     {
-                        ListaVeh[i].X += ListaVeh[i].direction[0];
-                        ListaVeh[i].Y += ListaVeh[i].direction[1];
+                        ListaVeh[i].X += ListaVeh[i].direction[0] * 0.05;
+                        ListaVeh[i].Y += ListaVeh[i].direction[1] * 0.05;
                     }
                     reposition(i);
+                    if(ListaVeh[i].X + 20 < ListaVeh[i].objective[0] + 17 && ListaVeh[i].X + 20 > ListaVeh[i].objective[0] - 17 &&
+                        ListaVeh[i].Y + 20 < ListaVeh[i].objective[1] + 17 && ListaVeh[i].Y + 20 > ListaVeh[i].objective[1] - 17)
+                    {
+                        ListaVeh[i].direction[0] = ListaVeh[i].direction[1] = 0;
+                        ListaVeh[i].objective[0] = ListaVeh[i].objective[1] = 0;
+                        FlagsCanvas.Children[i].Visibility = Visibility.Collapsed;
+                    }
                 }
             }
         }

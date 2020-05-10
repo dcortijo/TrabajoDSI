@@ -26,10 +26,11 @@ namespace Hito3
         public double maxOverheat;
         public double overheat;
 
-        public int X { get; set; }
-        public int Y { get; set; }
+        public double X { get; set; }
+        public double Y { get; set; }
 
-        public int[] direction = { 0, 0 };
+        public double[] direction = { 0, 0 };
+        public double[] objective = { 0, 0 };
 
         public bool selected = false;
 
