@@ -159,7 +159,7 @@ namespace Hito3
                 overheat = 7,
 
                 X = 130,
-                Y = 130,
+                Y = 230,
 
                 bomb = false,
              },

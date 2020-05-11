@@ -105,7 +105,7 @@ namespace Hito3
 
             Image img = new Image();
             img.Visibility = Visibility.Collapsed;
-            string s = System.IO.Directory.GetCurrentDirectory() + "\\" + "Assets\\bomb.jpg";
+            string s = System.IO.Directory.GetCurrentDirectory() + "\\" + "Assets\\bomb.png";
             img.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));
             img.Width = 50;
             img.Height = 50;
@@ -152,11 +152,7 @@ namespace Hito3
             {
                 activeIndex = newIndex;
                 ListViewVehicles.SelectedIndex = newIndex;
-                for (int i = 0; i < ListaYourVeh.Count(); ++i)
-                {
-                    if (i != activeIndex) AmmoCanvas.Children[i].Visibility = Visibility.Collapsed;
-                    else AmmoCanvas.Children[i].Visibility = Visibility.Visible;
-                }
+                updateAmmo();
             }
         }
 
@@ -181,16 +177,14 @@ namespace Hito3
                 switch (e.Key)
                 {
                     case Windows.System.VirtualKey.B:
+                        ListaVeh[activeIndex].bomb = true;
+                        bombIndex = activeIndex;
+                        MapCanvas.Children.Last().Visibility = Visibility.Visible;
+                        break;
+                    case Windows.System.VirtualKey.V:
                         deactivateAllBombs();   //So no more than 1 bomb carrier
-                        ListaVeh[activeIndex].bomb = !ListaVeh[activeIndex].bomb;
-                        if (ListaVeh[activeIndex].bomb) {
-                            bombIndex = activeIndex;
-                            MapCanvas.Children.Last().Visibility = Visibility.Visible; 
-                        }
-                        else {
-                            bombIndex = -1;
-                            MapCanvas.Children.Last().Visibility = Visibility.Collapsed; 
-                        }
+                        bombIndex = -1;
+                        MapCanvas.Children.Last().Visibility = Visibility.Collapsed;
                         break;
                     /*case Windows.System.VirtualKey.W:
                         ListaVeh[activeIndex].Y -= 5;
@@ -215,6 +209,7 @@ namespace Hito3
         private void ListViewVehicles_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             activeIndex = ListViewVehicles.SelectedIndex;
+            updateAmmo();
         }
 
         /*private readonly object myLock = new object();
@@ -231,12 +226,6 @@ namespace Hito3
             {
                 AmmoCanvas.Children[i].SetValue(Canvas.LeftProperty, ListaVeh[i].X - 15);
                 AmmoCanvas.Children[i].SetValue(Canvas.TopProperty, ListaVeh[i].Y + 10);
-            }
-            if(bombIndex > -1)
-            {
-                MapCanvas.Children.Last().SetValue(Canvas.LeftProperty, ListaVeh[i].X + 40);
-                MapCanvas.Children.Last().SetValue(Canvas.TopProperty, ListaVeh[i].Y);
-                checkIfBombInBase();
             }
         }
 
@@ -266,6 +255,7 @@ namespace Hito3
             {
                 ListaVeh[i].bomb = false;
             }
+            bombIndex = -1;
         }
 
         private void DispatcherTimerSetup()
@@ -321,6 +311,21 @@ namespace Hito3
                         FlagsCanvas.Children[i].Visibility = Visibility.Collapsed;
                     }
                 }
+                if (bombIndex > -1)
+                {
+                    MapCanvas.Children.Last().SetValue(Canvas.LeftProperty, ListaVeh[bombIndex].X + 40);
+                    MapCanvas.Children.Last().SetValue(Canvas.TopProperty, ListaVeh[bombIndex].Y);
+                    checkIfBombInBase();
+                }
+            }
+        }
+
+        void updateAmmo()
+        {
+            for (int i = 0; i < ListaYourVeh.Count(); ++i)
+            {
+                if (i != activeIndex) AmmoCanvas.Children[i].Visibility = Visibility.Collapsed;
+                else AmmoCanvas.Children[i].Visibility = Visibility.Visible;
             }
         }
     }

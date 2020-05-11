@@ -168,6 +168,7 @@
     <Content Include="Assets\jetEnemy.png" />
     <Content Include="Assets\jetIcon.png" />
     <Content Include="Assets\jetYou.png" />
+    <Content Include="Assets\Madrid.png" />
     <Content Include="Assets\mando.png" />
     <Content Include="Assets\map.jpg" />
     <Content Include="Assets\minimap.jpg" />
