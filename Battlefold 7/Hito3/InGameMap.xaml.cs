@@ -27,7 +27,7 @@ namespace Hito3
     /// <summary>
     /// Página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class InGameMap : Page
+    public sealed partial class InGameMap : Page, INotifyPropertyChanged
     {
         //Vehículo activo
         int activeIndex = -1;
@@ -145,6 +145,20 @@ namespace Hito3
             DispatcherTimerSetup();
         }
 
+        public double PanelSize
+        {
+            get => _panelSize;
+            set
+            {
+                if (_panelSize != value)
+                {
+                    _panelSize = value;
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PanelSize)));
+                }
+            }
+        }
+        private double _panelSize = 20;
+
         private void ClickedVeh(object sender, PointerRoutedEventArgs e)
         {
             int newIndex = MapCanvas.Children.IndexOf((e.OriginalSource as Image).Parent as ContentControl);
@@ -236,14 +250,14 @@ namespace Hito3
             {
                 if(ListaVeh[bombIndex].X < 200 && ListaVeh[bombIndex].X > 100 && ListaVeh[bombIndex].Y > 100 && ListaVeh[bombIndex].Y < 200)
                 {
-                    double i = ListaVeh[-1].X; //Crash
+                    this.Frame.Navigate(typeof(MainPage));
                 }
             }
             else
             {
                 if (ListaVeh[bombIndex].X < 900 && ListaVeh[bombIndex].X > 800 && ListaVeh[bombIndex].Y > 600 && ListaVeh[bombIndex].Y < 700)
                 {
-                    double i = ListaVeh[-1].X; //Crash
+                    this.Frame.Navigate(typeof(MainPage));
                 }
             }
             return result;
@@ -291,6 +305,7 @@ namespace Hito3
         {
             if (timeLeft == 0)
             {
+                this.Frame.Navigate(typeof(MainPage));
                 updateTimer.Stop();
             }
             else
@@ -327,6 +342,11 @@ namespace Hito3
                 if (i != activeIndex) AmmoCanvas.Children[i].Visibility = Visibility.Collapsed;
                 else AmmoCanvas.Children[i].Visibility = Visibility.Visible;
             }
+        }
+
+        private void page_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            PanelSize = e.NewSize.Width / ListaYourVeh.Count();
         }
     }
 }

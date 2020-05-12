@@ -39,6 +39,7 @@ namespace Hito3
             Y = vehicle.Y;
 
             direction = vehicle.direction;
+            objective = vehicle.objective;
 
             Img = new Image();
             string s = System.IO.Directory.GetCurrentDirectory() + "\\" + vehicle.Imagen;

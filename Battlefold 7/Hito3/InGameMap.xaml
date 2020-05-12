@@ -6,21 +6,19 @@
     xmlns:local="using:Hito3"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
+    mc:Ignorable="d" SizeChanged="page_SizeChanged"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Page.Resources>
         <DataTemplate x:Key="ListViewVehicle" x:DataType="local:InGameVehicleViewModel">
-            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="288">
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="{Binding PanelSize, ElementName=page, Mode=OneWay}">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="2*"/>
-                    <ColumnDefinition Width="2*"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="2*"/>
                 </Grid.ColumnDefinitions>
-                <Border Background="Red" Width="10" Height="{x:Bind overheatBar}" Grid.Column="2"/>
-                <Border Background="Green" Width="10" Height="{x:Bind healthBar}" CornerRadius="5" Grid.Column="3"/>
-                <Image Source="{x:Bind Imagen}" Width="100" Height="100" VerticalAlignment="Center" Grid.Column="4" Grid.ColumnSpan="7" HorizontalAlignment="Left"/>
+                <Border Background="Red" Width="10" Height="{x:Bind overheatBar, Mode=OneWay}" Grid.Column="0" HorizontalAlignment="Right"/>
+                <Border Background="Green" Width="10" Height="{x:Bind healthBar, Mode=OneWay}" CornerRadius="5" Grid.Column="1" HorizontalAlignment="Center"/>
+                <Image Source="{x:Bind Imagen, Mode=OneWay}" Stretch="Fill" VerticalAlignment="Center" Grid.Column="2" HorizontalAlignment="Left"/>
             </Grid>
         </DataTemplate>
     </Page.Resources>
@@ -32,7 +30,7 @@
         <Border Grid.Row="1" Background="LightBlue"></Border>
         <ScrollViewer x:Name="MapScroll" Grid.Row="0" ZoomMode="Enabled" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalScrollMode="Auto" HorizontalScrollBarVisibility="Auto">
             <Grid>
-                <Image x:Name="MapImg" Source="Assets/Madrid.png" PointerPressed="ClickedMap"/>
+                <Image x:Name="MapImg" Source="Assets/Madrid.png" PointerPressed="ClickedMap" HorizontalAlignment="Left"/>
                 <Canvas x:Name="BaseCanvas">
                     <Image x:Name="EnemyBase" Canvas.Left="10" Canvas.Top="10" Source="Assets/baseEnemy.png" Width="100" Height="100"/>
                     <Image x:Name="AllyBase" Canvas.Left="1076" Canvas.Top="642" Source="Assets/baseAlly.png" Width="100" Height="100"/>
@@ -47,7 +45,7 @@
             <RelativePanel Background="LightBlue" Height="80" Width="150" CornerRadius="10,10,10,10" BorderThickness="3,3,3,3" BorderBrush="CornflowerBlue" Margin="13,39,13,38"/>
             <TextBlock Name="Timer" Text="00:00" FocusVisualPrimaryBrush="Black" Foreground="Black" FontWeight="Bold" FontSize="48" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         </Grid>
-        <ListView x:Name="ListViewVehicles" ItemTemplate="{StaticResource ListViewVehicle}" ItemsSource="{x:Bind ListaYourVeh}" SelectionChanged="ListViewVehicles_SelectionChanged" Grid.Row="1" ScrollViewer.VerticalScrollBarVisibility="Disabled"  ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollMode="Enabled">
+        <ListView x:Name="ListViewVehicles" ItemTemplate="{StaticResource ListViewVehicle}" ItemsSource="{x:Bind ListaYourVeh, Mode=OneWay}" SelectionChanged="ListViewVehicles_SelectionChanged" Grid.Row="1" ScrollViewer.VerticalScrollBarVisibility="Disabled"  ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollMode="Enabled">
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
                     <StackPanel Orientation="Horizontal"></StackPanel>
