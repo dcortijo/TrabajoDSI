@@ -33,6 +33,7 @@ namespace Hito3
         int activeIndex = -1;
         int bombIndex = -1;
         DispatcherTimer clockTimer;
+        int totalTime = 200;
         int timeLeft = 200;
         DispatcherTimer updateTimer;
 
@@ -310,6 +311,11 @@ namespace Hito3
             }
             else
             {
+                if(timeLeft == totalTime - 5)
+                {
+                    BeginText.Visibility = Visibility.Collapsed;
+                }
+
                 for(int i = 0; i < ListaYourVeh.Count(); ++i)
                 {
                     if(ListaVeh[i].direction[0] != 0 && ListaVeh[i].direction[1] != 0)

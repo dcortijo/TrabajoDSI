@@ -2,4 +2,7 @@ He implementado el mapa de juego de la partida, al que se llega al acabarse el t
 He usado varios canvas para los elementos del mapa (las bases, los vehículos y las barras de vida).
 He creado un timer con el cual se actualiza la posición de los vehículos, qe van hacia una imagen
 puesta en un canvas por el jugador.
-He creado una listView horizontal que se adapta su anchura a la resolución de la aplicación.
+He creado una listView horizontal que se adapta su anchura parcialmente a la resolución de la aplicación. 
+(Especifico parcialmente porque he intentado hacer que se adapte al completo pero al inetntar cambiar el tamaño de cualquier elemento que ponía en la template en función de la resolución no se adaptaba bien).
+He hecho que al acabrse el tiempo o un jugador ganar se vuelva al menú principal.
+He hecho que un etxto anuncie el comienzo de la partida y desaparezca a los 5 segunods del timer.

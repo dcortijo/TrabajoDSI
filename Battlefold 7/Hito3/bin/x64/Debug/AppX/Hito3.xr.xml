@@ -42,8 +42,11 @@
       <RootProperty Name="Source" />
       <RootProperty Name="Opacity" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="MaxWidth" />
+      <RootProperty Name="MaxHeight" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
+      <RootProperty Name="RenderTransformOrigin" />
       <RootEvent Name="PointerPressed" />
       <RootEvent Name="PointerReleased" />
       <RootEvent Name="PointerMoved" />
@@ -75,6 +78,7 @@
       <RootProperty Name="FontWeight" />
       <RootProperty Name="Name" />
       <RootProperty Name="FocusVisualPrimaryBrush" />
+      <RootProperty Name="FontStyle" />
       <RootProperty Name="Margin" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="FontFamily" />
@@ -100,12 +104,11 @@
       <RootProperty Name="Content" />
       <RootMethod Name="GetVerticalScrollBarVisibility" />
       <RootMethod Name="SetVerticalScrollBarVisibility" />
-      <RootMethod Name="GetHorizontalScrollBarVisibility" />
-      <RootMethod Name="SetHorizontalScrollBarVisibility" />
       <RootMethod Name="GetHorizontalScrollMode" />
       <RootMethod Name="SetHorizontalScrollMode" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="Margin" />
       <RootProperty Name="ItemTemplate" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="ItemsPanel" />

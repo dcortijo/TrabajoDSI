@@ -10,7 +10,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Page.Resources>
         <DataTemplate x:Key="ListViewVehicle" x:DataType="local:InGameVehicleViewModel">
-            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="{Binding PanelSize, ElementName=page, Mode=OneWay}">
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="{Binding PanelSize, ElementName=page, Mode=TwoWay}">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
@@ -18,7 +18,7 @@
                 </Grid.ColumnDefinitions>
                 <Border Background="Red" Width="10" Height="{x:Bind overheatBar, Mode=OneWay}" Grid.Column="0" HorizontalAlignment="Right"/>
                 <Border Background="Green" Width="10" Height="{x:Bind healthBar, Mode=OneWay}" CornerRadius="5" Grid.Column="1" HorizontalAlignment="Center"/>
-                <Image Source="{x:Bind Imagen, Mode=OneWay}" Stretch="Fill" VerticalAlignment="Center" Grid.Column="2" HorizontalAlignment="Left"/>
+                <Image Source="{x:Bind Imagen, Mode=OneWay}" MaxWidth="100" MaxHeight="100" Stretch="Uniform" VerticalAlignment="Center" Grid.Column="2" HorizontalAlignment="Left"/>
             </Grid>
         </DataTemplate>
     </Page.Resources>
@@ -32,8 +32,8 @@
             <Grid>
                 <Image x:Name="MapImg" Source="Assets/Madrid.png" PointerPressed="ClickedMap" HorizontalAlignment="Left"/>
                 <Canvas x:Name="BaseCanvas">
-                    <Image x:Name="EnemyBase" Canvas.Left="10" Canvas.Top="10" Source="Assets/baseEnemy.png" Width="100" Height="100"/>
-                    <Image x:Name="AllyBase" Canvas.Left="1076" Canvas.Top="642" Source="Assets/baseAlly.png" Width="100" Height="100"/>
+                    <Image x:Name="EnemyBase" Canvas.Left="127" Canvas.Top="91" Source="Assets/baseEnemy.png" Width="100" Height="100"/>
+                    <Image x:Name="AllyBase" Canvas.Left="923" Canvas.Top="564" Source="Assets/baseAlly.png" Width="100" Height="100" RenderTransformOrigin="-0.2,0.06"/>
                 </Canvas>
                 <Canvas x:Name="MapCanvas" />
                 <Canvas x:Name="HealthCanvas"/>
@@ -45,7 +45,8 @@
             <RelativePanel Background="LightBlue" Height="80" Width="150" CornerRadius="10,10,10,10" BorderThickness="3,3,3,3" BorderBrush="CornflowerBlue" Margin="13,39,13,38"/>
             <TextBlock Name="Timer" Text="00:00" FocusVisualPrimaryBrush="Black" Foreground="Black" FontWeight="Bold" FontSize="48" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         </Grid>
-        <ListView x:Name="ListViewVehicles" ItemTemplate="{StaticResource ListViewVehicle}" ItemsSource="{x:Bind ListaYourVeh, Mode=OneWay}" SelectionChanged="ListViewVehicles_SelectionChanged" Grid.Row="1" ScrollViewer.VerticalScrollBarVisibility="Disabled"  ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollMode="Enabled">
+        <TextBlock Name="BeginText" Text="BEGIN MATCH" FocusVisualPrimaryBrush="Black" FontWeight="Bold" FontSize="75" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="Orange" FontStyle="Oblique"/>
+        <ListView x:Name="ListViewVehicles" Margin="0, 0, 0, 0" ItemTemplate="{StaticResource ListViewVehicle}" ItemsSource="{x:Bind ListaYourVeh, Mode=OneWay}" SelectionChanged="ListViewVehicles_SelectionChanged" Grid.Row="1" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollMode="Auto">
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
                     <StackPanel Orientation="Horizontal"></StackPanel>
