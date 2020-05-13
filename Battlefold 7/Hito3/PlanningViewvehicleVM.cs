@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +16,7 @@ namespace Hito3
         public PlanningViewVehicleVM(PlanningViewVehicle v)
         {
             img = new Image();
-            string s = System.IO.Directory.GetCurrentDirectory() + "\\" + v.vehicleImage;
+            string s = System.IO.Directory.GetCurrentDirectory() + "\\" + v.vehicleImageSource;
             img.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));
             img.Width = 100;
             img.Height = 100;
@@ -23,7 +24,7 @@ namespace Hito3
             CCImg.Content = img;
             CCImg.UseSystemFocusVisuals = true;
 
-            vehicleImage = v.vehicleImage;
+            vehicleImageSource = v.vehicleImageSource;
             weapon = v.weapon;
             description = v.description;
             totalHealth = v.totalHealth;

@@ -25,7 +25,7 @@ namespace Hito3
     {
         public ObservableCollection<PlanningViewVehicleVM> ListaVehiculos { get; } = new ObservableCollection<PlanningViewVehicleVM>();
         DispatcherTimer timer;
-        int timeLeft = 0;
+        int timeLeft = 120;
         int selectedVehicle = 0;
 
         public PlanningView()
@@ -68,7 +68,6 @@ namespace Hito3
         private void PointerReleased_CCImg(object sender, PointerRoutedEventArgs e)
         {
             selectedVehicle = -1;
-            Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 0);
         }
 
         private void PointerMoved_CCImg(object sender, PointerRoutedEventArgs e)
@@ -167,7 +166,7 @@ namespace Hito3
         private void Jet_Button_Click(object sender, RoutedEventArgs e)
         {
             PlanningViewVehicle template = PlanningViewVehicle.getVehicleTemplate(3);
-            ListaVehiculos[selectedVehicle].vehicleImage = template.vehicleImage;
+            ListaVehiculos[selectedVehicle].vehicleImageSource = template.vehicleImageSource;
             ListaVehiculos[selectedVehicle].description = template.description;
             ListaVehiculos[selectedVehicle].totalHealth = template.totalHealth;
             ListaVehiculos[selectedVehicle].maxSpeed = template.maxSpeed;
@@ -175,7 +174,7 @@ namespace Hito3
         private void Car_Button_Click(object sender, RoutedEventArgs e)
         {
             PlanningViewVehicle template = PlanningViewVehicle.getVehicleTemplate(2);
-            ListaVehiculos[selectedVehicle].vehicleImage = template.vehicleImage;
+            ListaVehiculos[selectedVehicle].vehicleImageSource = template.vehicleImageSource;
             ListaVehiculos[selectedVehicle].description = template.description;
             ListaVehiculos[selectedVehicle].totalHealth = template.totalHealth;
             ListaVehiculos[selectedVehicle].maxSpeed = template.maxSpeed;
@@ -184,7 +183,7 @@ namespace Hito3
         private void Ship_Button_Click(object sender, RoutedEventArgs e)
         {
             PlanningViewVehicle template = PlanningViewVehicle.getVehicleTemplate(1);
-            ListaVehiculos[selectedVehicle].vehicleImage = template.vehicleImage;
+            ListaVehiculos[selectedVehicle].vehicleImageSource = template.vehicleImageSource;
             ListaVehiculos[selectedVehicle].description = template.description;
             ListaVehiculos[selectedVehicle].totalHealth = template.totalHealth;
             ListaVehiculos[selectedVehicle].maxSpeed = template.maxSpeed;
@@ -198,12 +197,13 @@ namespace Hito3
         private void VehicleButton_Click(object sender, RoutedEventArgs e)
         {
             FlyoutBase.ShowAttachedFlyout(sender as FrameworkElement);
+            //selectedVehicle = VehicleMap.Children.IndexOf((sender as PlanningViewVehicleVM).CCImg);
         }
 
         private void WeaponButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
             FlyoutBase.ShowAttachedFlyout(sender as FrameworkElement);
-
+            //selectedVehicle = VehicleMap.Children.IndexOf((sender as PlanningViewVehicleVM).CCImg);
         }
 
         private void Pistol_Button_Click(object sender, RoutedEventArgs e)

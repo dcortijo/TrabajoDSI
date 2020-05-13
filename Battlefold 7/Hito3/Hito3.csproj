@@ -148,23 +148,27 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\audio.png" />
+    <Content Include="Assets\axe_icon.png" />
     <Content Include="Assets\baseAlly.png" />
     <Content Include="Assets\baseEnemy.png" />
     <Content Include="Assets\bomb-128.png" />
     <Content Include="Assets\bomb.png" />
     <Content Include="Assets\BombLocation.png" />
     <Content Include="Assets\carAlly.png" />
+    <Content Include="Assets\carBlack.png" />
     <Content Include="Assets\carEnemy.png" />
     <Content Include="Assets\carYou.png" />
     <Content Include="Assets\Cruz.png" />
     <Content Include="Assets\Flag.png" />
     <Content Include="Assets\Fondo.jpg" />
     <Content Include="Assets\Gallvanos.jpg" />
+    <Content Include="Assets\harpoon_icon.png" />
     <Content Include="Assets\helicopter_purple.png" />
     <Content Include="Assets\InfluenceAlly.png" />
     <Content Include="Assets\InfluenceEnemy.png" />
     <Content Include="Assets\jet.jpg" />
     <Content Include="Assets\jetAlly.png" />
+    <Content Include="Assets\jetBlack.png" />
     <Content Include="Assets\jetEnemy.png" />
     <Content Include="Assets\jetIcon.png" />
     <Content Include="Assets\jetYou.png" />
@@ -178,6 +182,7 @@
     <Content Include="Assets\plus.png" />
     <Content Include="Assets\Raton.png" />
     <Content Include="Assets\shipAlly.png" />
+    <Content Include="Assets\shipBlack.png" />
     <Content Include="Assets\shipEnemy.png" />
     <Content Include="Assets\shipYou.png" />
     <Content Include="Assets\truck_purple.png" />
