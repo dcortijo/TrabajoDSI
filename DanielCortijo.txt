@@ -5,4 +5,4 @@ puesta en un canvas por el jugador.
 He creado una listView horizontal que se adapta su anchura parcialmente a la resolución de la aplicación. 
 (Especifico parcialmente porque he intentado hacer que se adapte al completo pero al inetntar cambiar el tamaño de cualquier elemento que ponía en la template en función de la resolución no se adaptaba bien).
 He hecho que al acabrse el tiempo o un jugador ganar se vuelva al menú principal.
-He hecho que un etxto anuncie el comienzo de la partida y desaparezca a los 5 segunods del timer.
+He hecho que un texto anuncie el comienzo de la partida y desaparezca a los 5 segunods del timer.
