@@ -127,6 +127,17 @@
         </Grid>
         <TextBlock Text="BATTLEFOLD 7" HorizontalAlignment="Center" Margin="0,20,0,19" TextWrapping="Wrap" Foreground="#FFFFC70F" FontFamily="Courier New" FontWeight="Bold" FontSize="100" Grid.Column="1" Grid.ColumnSpan="6" Grid.RowSpan="2"/>
         <Button x:Name="Exit" Content="Exit" Foreground="Blue" FontSize="50" FontFamily="Courier New" HorizontalAlignment="Stretch" Click="Exit_Button_Click" Grid.Row="2" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="1" VerticalAlignment="Stretch"/>
-       
+
+        <Grid Grid.Row="6" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid x:Name="SearchPanel" Grid.Row="3" Background="LightBlue" Visibility="Collapsed">
+                <Image Source="/Assets/search.png" HorizontalAlignment="Left"/>
+                <TextBlock Text="Searching" VerticalAlignment="Center" HorizontalAlignment="Center"  Foreground="Blue" FontSize="22"/>
+            </Grid>
+        </Grid>
     </Grid>
 </Page>
