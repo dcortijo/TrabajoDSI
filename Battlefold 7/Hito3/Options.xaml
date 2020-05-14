@@ -57,29 +57,53 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Image Source="/Assets/Raton.png"  HorizontalAlignment="Left" Grid.Column="1"/>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="20*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image Source="/Assets/Raton.png"  HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1"/>
             </Grid>
             <Grid Grid.Row="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Image Source="/Assets/ojo.png"  HorizontalAlignment="Left" Grid.Column="1"/>
+                <Image Source="/Assets/ojo.png"  HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1"/>
             </Grid>
             <Grid Grid.Row="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="20*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Image Source="/Assets/Gallvanos.jpg"  HorizontalAlignment="Left" Grid.Column="1"/>
+                <Image Source="/Assets/Gallvanos.jpg"  HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1"/>
             </Grid>
             <Grid Grid.Row="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="20*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Image Source="/Assets/Raton.png"  HorizontalAlignment="Left" Grid.Column="1"/>
+                <Image Source="/Assets/Raton.png"  HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1"/>
             </Grid>
 
         </Grid>
@@ -137,7 +161,7 @@
             <TextBlock Text="Colorblind Mode" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" FontSize="22"/>
             <CheckBox Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="1" Foreground="Blue" />
             <TextBlock Text="Fullscreen" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" FontSize="22"/>
-            <CheckBox Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="1" Foreground="Blue" />
+            <CheckBox Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="1" Foreground="Blue"/>
             <TextBlock Text="Gallvanos Mode" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" FontSize="22"/>
             <CheckBox Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="1" Foreground="Blue" />
 
@@ -167,9 +191,9 @@
                 <RowDefinition Height="2*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Button Click="Graphics_Click" Content="Graphics" BorderThickness="1" BorderBrush="RoyalBlue" x:Name="Graphics" Grid.Column="0" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#BFCCDAED" FontSize="16" FontStretch="Undefined" Foreground="Blue" FocusVisualSecondaryBrush="White"/>
-            <Button Click="Sound_Click" Content="Sound" BorderThickness="1" BorderBrush="RoyalBlue" x:Name="Sound" Grid.Column="2" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#BFCCDAED" FontSize="16" FontStretch="Undefined" Foreground="Blue" FocusVisualSecondaryBrush="White"/>
-            <Button Click="Controls_Click" Content="Controls" BorderThickness="1" BorderBrush="RoyalBlue" x:Name="Controls" Grid.Column="4" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#BFCCDAED" FontSize="16" FontStretch="Undefined" Foreground="Blue" FocusVisualSecondaryBrush="White" />
+            <Button Click="Graphics_Click" Content="Graphics" BorderThickness="1" BorderBrush="RoyalBlue" x:Name="Graphics" Grid.Column="0" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#BFCCDAED" FontSize="16" FontStretch="Undefined" Foreground="Blue" FocusVisualSecondaryBrush="White" FocusVisualPrimaryBrush="Blue"/>
+            <Button Click="Sound_Click" Content="Sound" BorderThickness="1" BorderBrush="RoyalBlue" x:Name="Sound" Grid.Column="2" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#BFCCDAED" FontSize="16" FontStretch="Undefined" Foreground="Blue" FocusVisualSecondaryBrush="White" FocusVisualPrimaryBrush="Blue"/>
+            <Button Click="Controls_Click" Content="Controls" BorderThickness="1" BorderBrush="RoyalBlue" x:Name="Controls" Grid.Column="4" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#BFCCDAED" FontSize="16" FontStretch="Undefined" Foreground="Blue" FocusVisualSecondaryBrush="White" FocusVisualPrimaryBrush="Blue" />
 
             <Button BorderThickness="1" BorderBrush="RoyalBlue" x:Name="Language" Grid.Column="6" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#BFCCDAED" FontSize="12" FontStretch="Undefined" Foreground="Blue">
                 <Image Source="/Assets/UK.png" Stretch="Fill"/>

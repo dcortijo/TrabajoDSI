@@ -158,9 +158,11 @@
       <RootProperty Name="Background" />
       <RootProperty Name="FontStretch" />
       <RootProperty Name="FocusVisualSecondaryBrush" />
+      <RootProperty Name="FocusVisualPrimaryBrush" />
+      <RootProperty Name="MaxWidth" />
+      <RootProperty Name="MaxHeight" />
       <RootProperty Name="Name" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="FocusVisualPrimaryBrush" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Hito3.MainPage" />

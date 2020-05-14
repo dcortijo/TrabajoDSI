@@ -27,6 +27,7 @@ namespace Hito3
         public Options()
         {
             this.InitializeComponent();
+            this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
