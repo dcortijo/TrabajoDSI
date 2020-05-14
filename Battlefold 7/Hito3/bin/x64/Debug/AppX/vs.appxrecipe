@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>A87FC5740D18DC9D0200DA8FEABAC30FCC3BE530650CA731DC2597C0D0B9EABC</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>68DDCB0A3A3730E3C1EE5479C2F44BED9ACD110613236A49E850A7C0F93D533F</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>f4cd55ca-7def-4df1-adc2-8f056cfa6538_1.0.0.0_x64__z3y6jbs6sxxjw</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>f4cd55ca-7def-4df1-adc2-8f056cfa6538_z3y6jbs6sxxjw!App</RegisteredUserModeAppID>
     <RegisteredPackageID>f4cd55ca-7def-4df1-adc2-8f056cfa6538</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-14T10:33:52.388</Modified>
+      <Modified>2020-05-14T13:25:23.129</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\bin\x64\Debug\Hito3.exe">
       <PackagePath>entrypoint\Hito3.exe</PackagePath>
-      <Modified>2020-05-14T10:33:51.993</Modified>
+      <Modified>2020-05-14T13:25:22.242</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -74,6 +74,10 @@
       <PackagePath>Assets\BombLocation.png</PackagePath>
       <Modified>2020-05-07T14:09:06.043</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\Assets\Brightness.png">
+      <PackagePath>Assets\Brightness.png</PackagePath>
+      <Modified>2020-05-14T10:49:07.781</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\Assets\carAlly.png">
       <PackagePath>Assets\carAlly.png</PackagePath>
       <Modified>2020-05-07T14:09:06.060</Modified>
@@ -90,6 +94,10 @@
       <PackagePath>Assets\carYou.png</PackagePath>
       <Modified>2020-05-07T14:09:06.062</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\Assets\colorblind.png">
+      <PackagePath>Assets\colorblind.png</PackagePath>
+      <Modified>2020-05-14T10:49:49.655</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\Assets\Cruz.png">
       <PackagePath>Assets\Cruz.png</PackagePath>
       <Modified>2020-05-07T14:09:06.044</Modified>
@@ -97,6 +105,10 @@
     <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\Assets\Flag.png">
       <PackagePath>Assets\Flag.png</PackagePath>
       <Modified>2020-05-08T19:56:10.665</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\Assets\fullscreen.png">
+      <PackagePath>Assets\fullscreen.png</PackagePath>
+      <Modified>2020-05-14T10:42:37.778</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\Assets\harpoon_icon.png">
       <PackagePath>Assets\harpoon_icon.png</PackagePath>
@@ -161,6 +173,10 @@
     <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\Assets\Raton.png">
       <PackagePath>Assets\Raton.png</PackagePath>
       <Modified>2020-05-07T14:09:06.049</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\Assets\Screen.png">
+      <PackagePath>Assets\Screen.png</PackagePath>
+      <Modified>2020-05-14T10:41:19.183</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\Assets\shipAlly.png">
       <PackagePath>Assets\shipAlly.png</PackagePath>
@@ -262,27 +278,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-05-14T10:33:04.731</Modified>
+      <Modified>2020-05-14T13:25:22.052</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\bin\x64\Debug\FirstPerson.xbf">
       <PackagePath>FirstPerson.xbf</PackagePath>
-      <Modified>2020-05-14T10:33:04.731</Modified>
+      <Modified>2020-05-14T13:25:22.052</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\bin\x64\Debug\InGameMap.xbf">
       <PackagePath>InGameMap.xbf</PackagePath>
-      <Modified>2020-05-14T10:33:04.731</Modified>
+      <Modified>2020-05-14T13:25:22.052</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-05-14T10:33:04.718</Modified>
+      <Modified>2020-05-14T13:25:22.039</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\bin\x64\Debug\Options.xbf">
       <PackagePath>Options.xbf</PackagePath>
-      <Modified>2020-05-14T10:33:51.829</Modified>
+      <Modified>2020-05-14T13:25:22.047</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\bin\x64\Debug\PlanningView.xbf">
       <PackagePath>PlanningView.xbf</PackagePath>
-      <Modified>2020-05-14T10:33:04.731</Modified>
+      <Modified>2020-05-14T13:25:22.052</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -290,11 +306,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-05-14T10:28:20.988</Modified>
+      <Modified>2020-05-14T10:50:34.105</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\bin\x64\Debug\Core\Hito3.exe">
       <PackagePath>Hito3.exe</PackagePath>
-      <Modified>2020-05-14T10:33:52.382</Modified>
+      <Modified>2020-05-14T13:25:23.108</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
