@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-13T10:55:52.967</Modified>
+      <Modified>2020-05-14T13:25:48.913</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x64\Debug\Hito3.exe">
       <PackagePath>entrypoint\Hito3.exe</PackagePath>
-      <Modified>2020-05-13T10:55:51.297</Modified>
+      <Modified>2020-05-14T13:25:45.111</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -48,221 +48,241 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\audio.png">
       <PackagePath>Assets\audio.png</PackagePath>
-      <Modified>2020-05-07T13:20:29.971</Modified>
+      <Modified>2020-05-14T12:55:50.053</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\axe_icon.png">
+      <PackagePath>Assets\axe_icon.png</PackagePath>
+      <Modified>2020-05-14T12:55:50.054</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\baseAlly.png">
       <PackagePath>Assets\baseAlly.png</PackagePath>
-      <Modified>2020-05-01T10:17:57.377</Modified>
+      <Modified>2020-05-14T12:55:50.055</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\baseEnemy.png">
       <PackagePath>Assets\baseEnemy.png</PackagePath>
-      <Modified>2020-05-01T10:13:38.767</Modified>
+      <Modified>2020-05-14T12:55:50.056</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\bomb-128.png">
       <PackagePath>Assets\bomb-128.png</PackagePath>
-      <Modified>2020-05-06T17:49:09.369</Modified>
+      <Modified>2020-05-14T12:55:50.057</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\bomb.png">
       <PackagePath>Assets\bomb.png</PackagePath>
-      <Modified>2020-05-07T13:20:29.448</Modified>
+      <Modified>2020-05-14T12:55:50.059</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\BombLocation.png">
       <PackagePath>Assets\BombLocation.png</PackagePath>
-      <Modified>2020-05-06T17:49:09.124</Modified>
+      <Modified>2020-05-14T12:55:50.039</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\carAlly.png">
       <PackagePath>Assets\carAlly.png</PackagePath>
-      <Modified>2020-05-01T10:18:24.048</Modified>
+      <Modified>2020-05-14T12:55:50.060</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\carBlack.png">
+      <PackagePath>Assets\carBlack.png</PackagePath>
+      <Modified>2020-05-14T12:55:50.061</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\carEnemy.png">
       <PackagePath>Assets\carEnemy.png</PackagePath>
-      <Modified>2020-05-01T09:46:56.660</Modified>
+      <Modified>2020-05-14T12:55:50.061</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\carYou.png">
       <PackagePath>Assets\carYou.png</PackagePath>
-      <Modified>2020-05-01T10:19:42.818</Modified>
+      <Modified>2020-05-14T12:55:50.062</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\Cruz.png">
       <PackagePath>Assets\Cruz.png</PackagePath>
-      <Modified>2020-05-07T13:20:29.959</Modified>
+      <Modified>2020-05-14T12:55:50.040</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\Flag.png">
       <PackagePath>Assets\Flag.png</PackagePath>
-      <Modified>2020-05-08T14:52:36.756</Modified>
+      <Modified>2020-05-14T12:55:50.041</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\harpoon_icon.png">
+      <PackagePath>Assets\harpoon_icon.png</PackagePath>
+      <Modified>2020-05-14T12:55:50.062</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\helicopter_purple.png">
       <PackagePath>Assets\helicopter_purple.png</PackagePath>
-      <Modified>2020-05-06T17:49:09.420</Modified>
+      <Modified>2020-05-14T12:55:50.063</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\InfluenceAlly.png">
       <PackagePath>Assets\InfluenceAlly.png</PackagePath>
-      <Modified>2020-05-06T17:49:09.131</Modified>
+      <Modified>2020-05-14T12:55:50.043</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\InfluenceEnemy.png">
       <PackagePath>Assets\InfluenceEnemy.png</PackagePath>
-      <Modified>2020-05-06T17:49:09.146</Modified>
+      <Modified>2020-05-14T12:55:50.043</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\jetAlly.png">
       <PackagePath>Assets\jetAlly.png</PackagePath>
-      <Modified>2020-05-01T10:18:47.508</Modified>
+      <Modified>2020-05-14T12:55:50.065</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\jetBlack.png">
+      <PackagePath>Assets\jetBlack.png</PackagePath>
+      <Modified>2020-05-14T12:55:50.066</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\jetEnemy.png">
       <PackagePath>Assets\jetEnemy.png</PackagePath>
-      <Modified>2020-05-01T09:43:24.169</Modified>
+      <Modified>2020-05-14T12:55:50.066</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\jetIcon.png">
       <PackagePath>Assets\jetIcon.png</PackagePath>
-      <Modified>2020-05-07T13:20:29.472</Modified>
+      <Modified>2020-05-14T12:55:50.067</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\jetYou.png">
       <PackagePath>Assets\jetYou.png</PackagePath>
-      <Modified>2020-05-01T10:19:26.483</Modified>
+      <Modified>2020-05-14T12:55:50.067</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\Madrid.png">
       <PackagePath>Assets\Madrid.png</PackagePath>
-      <Modified>2019-03-20T11:18:41.569</Modified>
+      <Modified>2020-05-14T12:55:50.047</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\mando.png">
       <PackagePath>Assets\mando.png</PackagePath>
-      <Modified>2020-05-07T13:20:29.971</Modified>
+      <Modified>2020-05-14T12:55:50.068</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\ojo.png">
       <PackagePath>Assets\ojo.png</PackagePath>
-      <Modified>2020-05-07T13:20:29.972</Modified>
+      <Modified>2020-05-14T12:55:50.071</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\pantalla.png">
       <PackagePath>Assets\pantalla.png</PackagePath>
-      <Modified>2020-05-07T13:20:29.973</Modified>
+      <Modified>2020-05-14T12:55:50.072</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\pistol_icon.png">
       <PackagePath>Assets\pistol_icon.png</PackagePath>
-      <Modified>2020-05-07T13:20:29.874</Modified>
+      <Modified>2020-05-14T12:55:50.073</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\plus.png">
       <PackagePath>Assets\plus.png</PackagePath>
-      <Modified>2020-05-06T17:49:09.565</Modified>
+      <Modified>2020-05-14T12:55:50.074</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\Raton.png">
       <PackagePath>Assets\Raton.png</PackagePath>
-      <Modified>2020-05-07T13:20:29.965</Modified>
+      <Modified>2020-05-14T12:55:50.049</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\shipAlly.png">
       <PackagePath>Assets\shipAlly.png</PackagePath>
-      <Modified>2020-05-01T10:19:02.473</Modified>
+      <Modified>2020-05-14T12:55:50.075</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\shipBlack.png">
+      <PackagePath>Assets\shipBlack.png</PackagePath>
+      <Modified>2020-05-14T12:55:50.075</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\shipEnemy.png">
       <PackagePath>Assets\shipEnemy.png</PackagePath>
-      <Modified>2020-05-01T09:47:09.301</Modified>
+      <Modified>2020-05-14T12:55:50.076</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\shipYou.png">
       <PackagePath>Assets\shipYou.png</PackagePath>
-      <Modified>2020-05-01T10:19:52.925</Modified>
+      <Modified>2020-05-14T12:55:50.078</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\truck_purple.png">
       <PackagePath>Assets\truck_purple.png</PackagePath>
-      <Modified>2020-05-06T17:49:09.587</Modified>
+      <Modified>2020-05-14T12:55:50.079</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\UK.png">
       <PackagePath>Assets\UK.png</PackagePath>
-      <Modified>2020-05-07T13:20:29.970</Modified>
+      <Modified>2020-05-14T12:55:50.052</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\vehicles.png">
       <PackagePath>Assets\vehicles.png</PackagePath>
-      <Modified>2020-05-07T13:20:29.474</Modified>
+      <Modified>2020-05-14T12:55:50.079</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\VehicleSelectBackground.png">
       <PackagePath>Assets\VehicleSelectBackground.png</PackagePath>
-      <Modified>2020-05-07T13:20:29.873</Modified>
+      <Modified>2020-05-14T12:55:50.052</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\WeaponSelectBackground.png">
       <PackagePath>Assets\WeaponSelectBackground.png</PackagePath>
-      <Modified>2020-05-07T13:20:29.873</Modified>
+      <Modified>2020-05-14T12:55:50.052</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2020-03-20T20:11:45.929</Modified>
+      <Modified>2020-05-14T12:55:50.044</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-03-20T20:11:45.929</Modified>
+      <Modified>2020-05-14T12:55:50.050</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-03-20T20:11:45.929</Modified>
+      <Modified>2020-05-14T12:55:50.050</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-03-20T20:11:45.929</Modified>
+      <Modified>2020-05-14T12:55:50.050</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-03-20T20:11:45.929</Modified>
+      <Modified>2020-05-14T12:55:50.051</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-03-20T20:11:45.929</Modified>
+      <Modified>2020-05-14T12:55:50.051</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-03-20T20:11:45.929</Modified>
+      <Modified>2020-05-14T12:55:50.053</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\Fondo.jpg">
       <PackagePath>Assets\Fondo.jpg</PackagePath>
-      <Modified>2020-05-07T13:20:29.960</Modified>
+      <Modified>2020-05-14T12:55:50.042</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\Gallvanos.jpg">
       <PackagePath>Assets\Gallvanos.jpg</PackagePath>
-      <Modified>2020-05-07T13:20:29.961</Modified>
+      <Modified>2020-05-14T12:55:50.042</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\jet.jpg">
       <PackagePath>Assets\jet.jpg</PackagePath>
-      <Modified>2020-05-07T13:20:29.449</Modified>
+      <Modified>2020-05-14T12:55:50.064</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\map.jpg">
       <PackagePath>Assets\map.jpg</PackagePath>
-      <Modified>2020-05-03T10:43:32.864</Modified>
+      <Modified>2020-05-14T12:55:50.069</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\minimap.jpg">
       <PackagePath>Assets\minimap.jpg</PackagePath>
-      <Modified>2020-05-07T13:20:29.474</Modified>
+      <Modified>2020-05-14T12:55:50.070</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2020-05-07T13:20:30.005</Modified>
+      <Modified>2020-05-14T12:55:50.088</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x64\Debug\Hito3.xr.xml">
       <PackagePath>Hito3.xr.xml</PackagePath>
-      <Modified>2020-05-13T10:16:36.384</Modified>
+      <Modified>2020-05-14T12:59:09.840</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-05-13T10:16:36.449</Modified>
+      <Modified>2020-05-14T13:25:44.833</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x64\Debug\FirstPerson.xbf">
       <PackagePath>FirstPerson.xbf</PackagePath>
-      <Modified>2020-05-13T10:16:36.449</Modified>
+      <Modified>2020-05-14T13:25:44.834</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x64\Debug\InGameMap.xbf">
       <PackagePath>InGameMap.xbf</PackagePath>
-      <Modified>2020-05-13T10:55:50.953</Modified>
+      <Modified>2020-05-14T13:25:44.834</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-05-13T10:16:36.423</Modified>
+      <Modified>2020-05-14T13:25:44.815</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x64\Debug\Options.xbf">
       <PackagePath>Options.xbf</PackagePath>
-      <Modified>2020-05-13T10:16:36.432</Modified>
+      <Modified>2020-05-14T13:25:44.824</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x64\Debug\PlanningView.xbf">
       <PackagePath>PlanningView.xbf</PackagePath>
-      <Modified>2020-05-13T10:16:36.449</Modified>
+      <Modified>2020-05-14T13:25:44.833</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -270,11 +290,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-05-11T13:51:46.515</Modified>
+      <Modified>2020-05-14T12:59:45.096</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x64\Debug\Core\Hito3.exe">
       <PackagePath>Hito3.exe</PackagePath>
-      <Modified>2020-05-13T10:55:52.945</Modified>
+      <Modified>2020-05-14T13:25:48.857</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

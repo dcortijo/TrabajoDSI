@@ -25,7 +25,7 @@ namespace Hito3
     {
         public ObservableCollection<PlanningViewVehicleVM> ListaVehiculos { get; } = new ObservableCollection<PlanningViewVehicleVM>();
         DispatcherTimer timer;
-        int timeLeft = 120;
+        int timeLeft = 10;
         int selectedVehicle = 0;
 
         public PlanningView()

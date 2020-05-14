@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>ALOITO555-PC</Machine>
-    <WindowsUser>aloito555</WindowsUser>
+    <Machine>GALLVANOS</Machine>
+    <WindowsUser>Gallvanos</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>f4cd55ca-7def-4df1-adc2-8f056cfa6538</PackageIdentityName>
     <PackageIdentityPublisher>CN=georgimednikov</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\Hito3.exe">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\Hito3.exe">
       <PackagePath>entrypoint\Hito3.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
@@ -34,193 +34,193 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\audio.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\audio.png">
       <PackagePath>Assets\audio.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\axe_icon.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\axe_icon.png">
       <PackagePath>Assets\axe_icon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\baseAlly.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\baseAlly.png">
       <PackagePath>Assets\baseAlly.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\baseEnemy.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\baseEnemy.png">
       <PackagePath>Assets\baseEnemy.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\bomb-128.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\bomb-128.png">
       <PackagePath>Assets\bomb-128.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\bomb.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\bomb.png">
       <PackagePath>Assets\bomb.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\BombLocation.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\BombLocation.png">
       <PackagePath>Assets\BombLocation.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\carAlly.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\carAlly.png">
       <PackagePath>Assets\carAlly.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\carBlack.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\carBlack.png">
       <PackagePath>Assets\carBlack.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\carEnemy.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\carEnemy.png">
       <PackagePath>Assets\carEnemy.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\carYou.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\carYou.png">
       <PackagePath>Assets\carYou.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\Cruz.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\Cruz.png">
       <PackagePath>Assets\Cruz.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\Flag.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\Flag.png">
       <PackagePath>Assets\Flag.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\harpoon_icon.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\harpoon_icon.png">
       <PackagePath>Assets\harpoon_icon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\helicopter_purple.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\helicopter_purple.png">
       <PackagePath>Assets\helicopter_purple.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\InfluenceAlly.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\InfluenceAlly.png">
       <PackagePath>Assets\InfluenceAlly.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\InfluenceEnemy.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\InfluenceEnemy.png">
       <PackagePath>Assets\InfluenceEnemy.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\jetAlly.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\jetAlly.png">
       <PackagePath>Assets\jetAlly.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\jetBlack.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\jetBlack.png">
       <PackagePath>Assets\jetBlack.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\jetEnemy.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\jetEnemy.png">
       <PackagePath>Assets\jetEnemy.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\jetIcon.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\jetIcon.png">
       <PackagePath>Assets\jetIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\jetYou.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\jetYou.png">
       <PackagePath>Assets\jetYou.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\Madrid.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\Madrid.png">
       <PackagePath>Assets\Madrid.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\mando.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\mando.png">
       <PackagePath>Assets\mando.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\ojo.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\ojo.png">
       <PackagePath>Assets\ojo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\pantalla.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\pantalla.png">
       <PackagePath>Assets\pantalla.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\pistol_icon.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\pistol_icon.png">
       <PackagePath>Assets\pistol_icon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\plus.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\plus.png">
       <PackagePath>Assets\plus.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\Raton.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\Raton.png">
       <PackagePath>Assets\Raton.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\shipAlly.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\shipAlly.png">
       <PackagePath>Assets\shipAlly.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\shipBlack.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\shipBlack.png">
       <PackagePath>Assets\shipBlack.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\shipEnemy.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\shipEnemy.png">
       <PackagePath>Assets\shipEnemy.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\shipYou.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\shipYou.png">
       <PackagePath>Assets\shipYou.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\truck_purple.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\truck_purple.png">
       <PackagePath>Assets\truck_purple.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\UK.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\UK.png">
       <PackagePath>Assets\UK.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\vehicles.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\vehicles.png">
       <PackagePath>Assets\vehicles.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\VehicleSelectBackground.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\VehicleSelectBackground.png">
       <PackagePath>Assets\VehicleSelectBackground.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\WeaponSelectBackground.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\WeaponSelectBackground.png">
       <PackagePath>Assets\WeaponSelectBackground.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\Fondo.jpg">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\Fondo.jpg">
       <PackagePath>Assets\Fondo.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\Gallvanos.jpg">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\Gallvanos.jpg">
       <PackagePath>Assets\Gallvanos.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\jet.jpg">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\jet.jpg">
       <PackagePath>Assets\jet.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\map.jpg">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\map.jpg">
       <PackagePath>Assets\map.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Assets\minimap.jpg">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Assets\minimap.jpg">
       <PackagePath>Assets\minimap.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\Hito3.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\Hito3.xr.xml">
       <PackagePath>Hito3.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\FirstPerson.xbf">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\FirstPerson.xbf">
       <PackagePath>FirstPerson.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\InGameMap.xbf">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\InGameMap.xbf">
       <PackagePath>InGameMap.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\Options.xbf">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\Options.xbf">
       <PackagePath>Options.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\PlanningView.xbf">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\PlanningView.xbf">
       <PackagePath>PlanningView.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\aloit\Documentos\Universidad\DSI\Trabajo Final\Repo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\Core\Hito3.exe">
+    <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\Core\Hito3.exe">
       <PackagePath>Hito3.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
@@ -275,33 +275,33 @@
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.27323.0</Version>
+      <Version>14.0.27810.0</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.27323.0</Version>
+      <Version>14.0.27810.0</Version>
       <Architecture>ARM64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.27323.0</Version>
+      <Version>14.0.27810.0</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.27323.0</Version>
+      <Version>14.0.27810.0</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
