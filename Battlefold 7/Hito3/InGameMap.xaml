@@ -30,7 +30,7 @@
         <Border Grid.Row="1" Background="LightBlue"></Border>
         <ScrollViewer x:Name="MapScroll" Grid.Row="0" MinZoomFactor="1" MaxZoomFactor="1" ZoomMode="Enabled" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalScrollMode="Auto" HorizontalScrollBarVisibility="Auto">
             <Grid>
-                <Image x:Name="MapImg" Source="Assets/Madrid.png" PointerPressed="ClickedMap" HorizontalAlignment="Center" Stretch="Fill"/>
+                <Image x:Name="MapImg" Source="Assets/Madrid.png" PointerPressed="ClickedMap" HorizontalAlignment="Left" Stretch="Fill"/>
                 <Canvas x:Name="BaseCanvas">
                     <Image x:Name="EnemyBase" Canvas.Left="127" Canvas.Top="91" Source="Assets/baseEnemy.png" Width="100" Height="100"/>
                     <Image x:Name="AllyBase" Canvas.Left="1013" Canvas.Top="619" Source="Assets/baseAlly.png" Width="100" Height="100" RenderTransformOrigin="-0.2,0.06"/>

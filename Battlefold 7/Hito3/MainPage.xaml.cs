@@ -23,10 +23,13 @@ namespace Hito3
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        DispatcherTimer timer;
+        int timeLeft = 3;
         public MainPage()
         {
             this.InitializeComponent();
             this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
+            SearchPanel.Visibility = Visibility.Collapsed;
         }
 
         private void Options_Button_Click(object sender, RoutedEventArgs e)
@@ -40,9 +43,27 @@ namespace Hito3
 
         private void Play_Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(PlanningView), e);
+            SearchPanel.Visibility = Visibility.Visible;
+            timer = new DispatcherTimer();
+            timer.Interval = new TimeSpan(0, 0, 1);
+            timer.Tick += TimerTick;
+            timer.Start();
+
         }
-        
+        void TimerTick(object sender, object e)
+        {
+            if (timeLeft > 0)
+                timeLeft--;
+            else if (timeLeft < 0)
+                timeLeft = 0;
+
+            if (timeLeft == 0)
+            {
+                this.Frame.Navigate(typeof(PlanningView), e);
+                timer.Stop();
+            }
+        }
+
         private void Exit_Button_Click(object sender, RoutedEventArgs e)
         {
             CoreApplication.Exit();

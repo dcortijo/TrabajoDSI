@@ -22,11 +22,11 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="Name" />
+      <RootProperty Name="Background" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="MaxHeight" />
       <RootProperty Name="Margin" />
       <RootEvent Name="KeyDown" />
-      <RootEvent Name="PointerPressed" />
       <RootEvent Name="Tapped" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />

@@ -42,12 +42,12 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <TextBlock Text="Control type" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <TextBlock FontSize="22" Text="Control type" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
             <Button x:Name="Controls_Switch" Click="Controls_Switch_Click" Content="Mouse and Keyboard" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" BorderBrush="Blue" />
-            <TextBlock Text="Mouse sensitivity" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
-            <TextBlock Text="Inverted Y axis" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
-            <TextBlock Text="Gallvanos callibration" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
-            <TextBlock Text="Key speed" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <TextBlock FontSize="22" Text="Mouse sensitivity" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <TextBlock FontSize="22" Text="Inverted Y axis" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <TextBlock FontSize="22" Text="Gallvanos callibration" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <TextBlock FontSize="22" Text="Key speed" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
             <Slider Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black"/>
             <Slider Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black"/>
             <CheckBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="1" Foreground="Blue" />
@@ -127,9 +127,9 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <TextBlock Text="Voices" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
-            <TextBlock Text="Music" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
-            <TextBlock Text="Effects" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <TextBlock Text="Voices" Grid.Row="3" Grid.Column="0" FontSize="22" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <TextBlock Text="Music" Grid.Row="4" Grid.Column="0" FontSize="22" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <TextBlock Text="Effects" Grid.Row="2" Grid.Column="0" FontSize="22" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
             <Slider Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black"/>
             <Slider Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black"/>
             <Slider Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black"/>

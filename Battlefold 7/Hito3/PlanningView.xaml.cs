@@ -158,7 +158,9 @@ namespace Hito3
                 + ((timeLeft % 60) <= 9 ? "0" : "") + (timeLeft % 60).ToString();
             if (timeLeft == 0)
             {
-                this.Frame.Navigate(typeof(InGameMap));
+                BetweenPageParameter param = new BetweenPageParameter();
+                param.Time = 200;
+                this.Frame.Navigate(typeof(InGameMap), param);
                 timer.Stop();
             }
         }
