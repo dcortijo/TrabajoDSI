@@ -26,6 +26,7 @@ namespace Hito3
         public MainPage()
         {
             this.InitializeComponent();
+            this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
         }
 
         private void Options_Button_Click(object sender, RoutedEventArgs e)
