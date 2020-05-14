@@ -55,6 +55,9 @@
     <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\Assets\BombLocation.png">
       <PackagePath>Assets\BombLocation.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\Assets\Brightness.png">
+      <PackagePath>Assets\Brightness.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\Assets\carAlly.png">
       <PackagePath>Assets\carAlly.png</PackagePath>
     </AppxPackagedFile>
@@ -67,11 +70,17 @@
     <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\Assets\carYou.png">
       <PackagePath>Assets\carYou.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\Assets\colorblind.png">
+      <PackagePath>Assets\colorblind.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\Assets\Cruz.png">
       <PackagePath>Assets\Cruz.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\Assets\Flag.png">
       <PackagePath>Assets\Flag.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\Assets\fullscreen.png">
+      <PackagePath>Assets\fullscreen.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\Assets\harpoon_icon.png">
       <PackagePath>Assets\harpoon_icon.png</PackagePath>
@@ -120,6 +129,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\Assets\Raton.png">
       <PackagePath>Assets\Raton.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\Assets\Screen.png">
+      <PackagePath>Assets\Screen.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Proyectos\TrabajoDSI\Battlefold 7\Hito3\Assets\shipAlly.png">
       <PackagePath>Assets\shipAlly.png</PackagePath>
