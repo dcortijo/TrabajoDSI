@@ -28,18 +28,19 @@
             <RowDefinition Height="1*"></RowDefinition>
         </Grid.RowDefinitions>
         <Border Grid.Row="1" Background="LightBlue"></Border>
-        <!--<ScrollViewer x:Name="MapScroll" Grid.Row="0" ZoomMode="Enabled" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalScrollMode="Auto" HorizontalScrollBarVisibility="Auto">-->
-        <Grid>
-            <Image x:Name="MapImg" Source="Assets/Madrid.png" PointerPressed="ClickedMap" HorizontalAlignment="Left" Stretch="Fill"/>
-            <Canvas x:Name="BaseCanvas">
-                <Image x:Name="EnemyBase" Canvas.Left="127" Canvas.Top="91" Source="Assets/baseEnemy.png" Width="100" Height="100"/>
-                <Image x:Name="AllyBase" Canvas.Left="1174" Canvas.Top="625" Source="Assets/baseAlly.png" Width="100" Height="100" RenderTransformOrigin="-0.2,0.06"/>
-            </Canvas>
-            <Canvas x:Name="MapCanvas" />
-            <Canvas x:Name="HealthCanvas"/>
-            <Canvas x:Name="AmmoCanvas"/>
-            <Canvas x:Name="FlagsCanvas"/>
-        </Grid>
+        <ScrollViewer x:Name="MapScroll" Grid.Row="0" MinZoomFactor="1" MaxZoomFactor="1" ZoomMode="Enabled" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalScrollMode="Auto" HorizontalScrollBarVisibility="Auto">
+            <Grid>
+                <Image x:Name="MapImg" Source="Assets/Madrid.png" PointerPressed="ClickedMap" HorizontalAlignment="Center" Stretch="Fill"/>
+                <Canvas x:Name="BaseCanvas">
+                    <Image x:Name="EnemyBase" Canvas.Left="127" Canvas.Top="91" Source="Assets/baseEnemy.png" Width="100" Height="100"/>
+                    <Image x:Name="AllyBase" Canvas.Left="1013" Canvas.Top="619" Source="Assets/baseAlly.png" Width="100" Height="100" RenderTransformOrigin="-0.2,0.06"/>
+                </Canvas>
+                <Canvas x:Name="MapCanvas" />
+                <Canvas x:Name="HealthCanvas"/>
+                <Canvas x:Name="AmmoCanvas"/>
+                <Canvas x:Name="FlagsCanvas"/>
+            </Grid>
+        </ScrollViewer>
         <Grid Height="156.7" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column="4">
             <RelativePanel Background="LightBlue" Height="80" Width="150" CornerRadius="10,10,10,10" BorderThickness="3,3,3,3" BorderBrush="CornflowerBlue" Margin="13,39,13,38"/>
             <TextBlock Name="Timer" Text="00:00" FocusVisualPrimaryBrush="Black" Foreground="Black" FontWeight="Bold" FontSize="48" VerticalAlignment="Center" HorizontalAlignment="Center"/>
