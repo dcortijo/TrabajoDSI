@@ -67,7 +67,7 @@ namespace Hito3
 
         private void PointerReleased_CCImg(object sender, PointerRoutedEventArgs e)
         {
-            selectedVehicle = -1;
+            //selectedVehicle = -1;
         }
 
         private void PointerMoved_CCImg(object sender, PointerRoutedEventArgs e)
