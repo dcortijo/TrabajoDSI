@@ -26,7 +26,6 @@
       <RootProperty Name="MaxHeight" />
       <RootProperty Name="Margin" />
       <RootEvent Name="KeyDown" />
-      <RootEvent Name="PointerPressed" />
       <RootEvent Name="Tapped" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
