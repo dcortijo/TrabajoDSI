@@ -33,31 +33,31 @@
                     </Grid.RowDefinitions>
                     
                     <Button  Content="Jose" IsEnabled="False" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch"/>
-                    <TextBlock Text="Ofline" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text="Offline" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
                     <Button  Content="Alfredo" IsEnabled="False" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Stretch"/>
-                    <TextBlock Text="Ofline" Grid.Column="3" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text="Offline" Grid.Column="3" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
                     <Button  Content="Juan" IsEnabled="False" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Stretch"/>
-                    <TextBlock Text="Ofline" Grid.Column="3" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text="Offline" Grid.Column="3" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
                     <Button  Content="Tomás" IsEnabled="False" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Stretch"/>
-                    <TextBlock Text="Ofline" Grid.Column="3" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text="Offline" Grid.Column="3" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
                     <Button  Content="Francisco" IsEnabled="True" Grid.Row="5" Grid.Column="0" HorizontalAlignment="Stretch"/>
                     <TextBlock Text="Online" Grid.Column="3" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
                     <Button  Content="Antonio" IsEnabled="False" Grid.Row="6" Grid.Column="0" HorizontalAlignment="Stretch"/>
-                    <TextBlock Text="Ofline" Grid.Column="3" Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text="Offline" Grid.Column="3" Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
                     <Button  Content="Pedro" IsEnabled="True" Grid.Row="7" Grid.Column="0" HorizontalAlignment="Stretch"/>
                     <TextBlock Text="Online" Grid.Column="3" Grid.Row="7" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
                     <Button  Content="Mochi" IsEnabled="False" Grid.Row="8" Grid.Column="0" HorizontalAlignment="Stretch"/>
-                    <TextBlock Text="Ofline" Grid.Column="3" Grid.Row="8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text="Offline" Grid.Column="3" Grid.Row="8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
                     <Button  Content="Eloy" IsEnabled="False" Grid.Row="9" Grid.Column="0" HorizontalAlignment="Stretch"/>
-                    <TextBlock Text="Ofline" Grid.Column="3" Grid.Row="9" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text="Offline" Grid.Column="3" Grid.Row="9" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
                     <Button  Content="Gallvanos" IsEnabled="True" Grid.Row="10" Grid.Column="0" HorizontalAlignment="Stretch"/>
                     <TextBlock Text="Online" Grid.Column="3" Grid.Row="10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
