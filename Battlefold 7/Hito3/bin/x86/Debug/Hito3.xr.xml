@@ -96,6 +96,18 @@
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
       <RootProperty Name="Mode" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="ZoomMode" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalScrollMode" />
+      <RootProperty Name="HorizontalScrollBarVisibility" />
+      <RootProperty Name="Content" />
+      <RootMethod Name="GetVerticalScrollBarVisibility" />
+      <RootMethod Name="SetVerticalScrollBarVisibility" />
+      <RootMethod Name="GetHorizontalScrollMode" />
+      <RootMethod Name="SetHorizontalScrollMode" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="Margin" />
       <RootProperty Name="ItemTemplate" />
@@ -103,12 +115,6 @@
       <RootProperty Name="ItemsPanel" />
       <RootProperty Name="Name" />
       <RootEvent Name="SelectionChanged" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
-      <RootMethod Name="GetVerticalScrollBarVisibility" />
-      <RootMethod Name="SetVerticalScrollBarVisibility" />
-      <RootMethod Name="GetHorizontalScrollMode" />
-      <RootMethod Name="SetHorizontalScrollMode" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
@@ -158,11 +164,11 @@
       <RootProperty Name="Background" />
       <RootProperty Name="FontStretch" />
       <RootProperty Name="FocusVisualSecondaryBrush" />
+      <RootProperty Name="FocusVisualPrimaryBrush" />
       <RootProperty Name="MaxWidth" />
       <RootProperty Name="MaxHeight" />
       <RootProperty Name="Name" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="FocusVisualPrimaryBrush" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Hito3.MainPage" />
