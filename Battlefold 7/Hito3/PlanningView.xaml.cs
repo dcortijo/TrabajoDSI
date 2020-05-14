@@ -25,7 +25,7 @@ namespace Hito3
     {
         public ObservableCollection<PlanningViewVehicleVM> ListaVehiculos { get; } = new ObservableCollection<PlanningViewVehicleVM>();
         DispatcherTimer timer;
-        int timeLeft = 0;
+        int timeLeft = 40;
         int selectedVehicle = 0;
 
         public PlanningView()
@@ -166,28 +166,30 @@ namespace Hito3
         private void Jet_Button_Click(object sender, RoutedEventArgs e)
         {
             PlanningViewVehicle template = PlanningViewVehicle.getVehicleTemplate(3);
-            ListaVehiculos[selectedVehicle].vehicleImageSource = template.vehicleImageSource;
-            ListaVehiculos[selectedVehicle].description = template.description;
-            ListaVehiculos[selectedVehicle].totalHealth = template.totalHealth;
-            ListaVehiculos[selectedVehicle].maxSpeed = template.maxSpeed;
+            SetVehicle(template);
         }
         private void Car_Button_Click(object sender, RoutedEventArgs e)
         {
             PlanningViewVehicle template = PlanningViewVehicle.getVehicleTemplate(2);
+            SetVehicle(template);
+        }
+
+        private void SetVehicle(PlanningViewVehicle template)
+        {
             ListaVehiculos[selectedVehicle].vehicleImageSource = template.vehicleImageSource;
+            //string s = System.IO.Directory.GetCurrentDirectory() + "\\" + template.vehicleImageSource;
+            //DataTemplate g = ((ListViewVehiculos.SelectedItem as DataTemplate));
+            //Image i = g.FindName("VehicleImage") as Image;
+            //i.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));
             ListaVehiculos[selectedVehicle].description = template.description;
             ListaVehiculos[selectedVehicle].totalHealth = template.totalHealth;
             ListaVehiculos[selectedVehicle].maxSpeed = template.maxSpeed;
-
         }
+
         private void Ship_Button_Click(object sender, RoutedEventArgs e)
         {
             PlanningViewVehicle template = PlanningViewVehicle.getVehicleTemplate(1);
-            ListaVehiculos[selectedVehicle].vehicleImageSource = template.vehicleImageSource;
-            ListaVehiculos[selectedVehicle].description = template.description;
-            ListaVehiculos[selectedVehicle].totalHealth = template.totalHealth;
-            ListaVehiculos[selectedVehicle].maxSpeed = template.maxSpeed;
-
+            SetVehicle(template);
         }
 
         private void VehicleFlyout_Closed(object sender, object e)
@@ -208,7 +210,8 @@ namespace Hito3
 
         private void Pistol_Button_Click(object sender, RoutedEventArgs e)
         {
-
+            PlanningViewWeapon weapon = PlanningViewWeapon.GetWeapon(1);
+            ListaVehiculos[selectedVehicle].weapon = weapon;
         }
 
         private void Harpoon_Button_Click(object sender, RoutedEventArgs e)
