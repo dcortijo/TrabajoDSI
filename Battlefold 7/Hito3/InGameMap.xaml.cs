@@ -112,6 +112,7 @@ namespace Hito3
             img.Height = 50;
             MapCanvas.Children.Add(img);
 
+            timeLeft = (e.Parameter as BetweenPageParameter).Time;
 
             /*Gamepad.GamepadAdded += (object sender, Gamepad e3) =>
             {
@@ -214,7 +215,9 @@ namespace Hito3
                         ListaVeh[activeIndex].X += 5;
                         break;*/
                     case Windows.System.VirtualKey.F:
-                        this.Frame.Navigate(typeof(FirstPerson));
+                        BetweenPageParameter param = new BetweenPageParameter();
+                        param.Time = timeLeft;
+                        this.Frame.Navigate(typeof(FirstPerson), param);
                         break;
                 }
                 //reposition();

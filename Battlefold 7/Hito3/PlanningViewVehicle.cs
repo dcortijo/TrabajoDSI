@@ -28,7 +28,7 @@ namespace Hito3
                 if(_vehicleImageSource != value)
                 {
                     _vehicleImageSource = value;
-                    OnPropertyChanged();
+                    //OnPropertyChanged();
                 }
             }
         }
@@ -99,8 +99,7 @@ namespace Hito3
                 totalHealth = 200,
                 maxSpeed = 60,
                 weapon = PlanningViewWeapon.GetWeapon(0)
-
-    },
+            },
             new PlanningViewVehicle()
             {
                 vehicleImageSource = "Assets\\carYou.png",
@@ -108,8 +107,7 @@ namespace Hito3
                 totalHealth = 150,
                 maxSpeed = 50,
                 weapon = PlanningViewWeapon.GetWeapon(0)
-
-    },
+            },
             new PlanningViewVehicle()
             {
                 vehicleImageSource = "Assets\\jetYou.png",
@@ -117,7 +115,7 @@ namespace Hito3
                 totalHealth = 50,
                 maxSpeed = 90,
                 weapon = PlanningViewWeapon.GetWeapon(0)
-    },
+            }
         };
         public static List<PlanningViewVehicle> vehicles = new List<PlanningViewVehicle>() {
             new PlanningViewVehicle()

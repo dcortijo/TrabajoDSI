@@ -125,6 +125,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BetweenPageParameter.cs" />
     <Compile Include="FirstPerson.xaml.cs">
       <DependentUpon>FirstPerson.xaml</DependentUpon>
     </Compile>

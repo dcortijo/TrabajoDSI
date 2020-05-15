@@ -25,7 +25,7 @@ namespace Hito3
     public sealed partial class MainPage : Page
     {
         DispatcherTimer timer;
-        int timeLeft = 10;
+        int timeLeft = 3;
         public MainPage()
         {
             this.InitializeComponent();

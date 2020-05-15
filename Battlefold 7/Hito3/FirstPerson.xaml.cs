@@ -41,7 +41,12 @@ namespace Hito3
         int seconds = 600;
         DispatcherTimer dispatcherTimer;
 
-        public FirstPerson()
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            seconds = (e.Parameter as BetweenPageParameter).Time;
+        }
+            public FirstPerson()
         {
             this.InitializeComponent();
             Window.Current.CoreWindow.KeyDown += CoreWindow_KeyDown;
@@ -58,10 +63,13 @@ namespace Hito3
             {
                 case Windows.System.VirtualKey.Escape:
                     //Se cambia de página
+
                     if (firstPerson)
                     {
                         firstPerson = false;
-                        this.Frame.Navigate(typeof(InGameMap));
+                        BetweenPageParameter param = new BetweenPageParameter();
+                        param.Time = seconds;
+                        this.Frame.Navigate(typeof(InGameMap), param);
                     }
                     break;
                 case Windows.System.VirtualKey.Space:
