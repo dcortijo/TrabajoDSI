@@ -48,8 +48,8 @@
             <TextBlock x:Uid="invertedAxis" Text="Inverted Y axis" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
             <TextBlock x:Uid="gallvanos" Text="Gallvanos callibration" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
             <TextBlock x:Uid="keySpeed" Text="Key speed" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
-            <Slider Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black"/>
-            <Slider Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black"/>
+            <Slider Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black" VerticalAlignment="Center"/>
+            <Slider Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black" VerticalAlignment="Center"/>
             <CheckBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="1" Foreground="Blue" />
             <CheckBox Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="1" Foreground="Blue" />
             
@@ -130,9 +130,9 @@
             <TextBlock Text="Voices" Grid.Row="3" Grid.Column="0" FontSize="22" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
             <TextBlock Text="Music" Grid.Row="4" Grid.Column="0" FontSize="22" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
             <TextBlock Text="Effects" Grid.Row="2" Grid.Column="0" FontSize="22" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
-            <Slider x:Name="Effects" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black" ValueChanged="Effects_ValueChanged"/>
-            <Slider x:Name="Voices" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black" ValueChanged="Voices_ValueChanged"/>
-            <Slider x:Name="Music" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black" ValueChanged="Music_ValueChanged"/>
+            <Slider x:Name="Effects" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black" ValueChanged="Effects_ValueChanged" VerticalAlignment="Center"/>
+            <Slider x:Name="Voices" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black" ValueChanged="Voices_ValueChanged" VerticalAlignment="Center"/>
+            <Slider x:Name="Music" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black" ValueChanged="Music_ValueChanged" VerticalAlignment="Center"/>
         </Grid>
 
         <Grid x:Name="Graphic_Tab" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed">
