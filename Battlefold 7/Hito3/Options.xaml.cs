@@ -31,6 +31,7 @@ namespace Hito3
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            ElementSoundPlayer.State = ElementSoundPlayerState.On;
             activeTab = Tab.Graphics;
             changeState();
         }
@@ -85,6 +86,24 @@ namespace Hito3
         private void Exit_Button_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainPage), e);
+        }
+
+        private void Effects_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+            ElementSoundPlayer.Volume = Effects.Value / 100;
+            ElementSoundPlayer.Play(ElementSoundKind.Invoke);
+        }
+
+        private void Voices_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+            ElementSoundPlayer.Volume = Voices.Value / 100;
+            ElementSoundPlayer.Play(ElementSoundKind.Invoke);
+        }
+
+        private void Music_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+            ElementSoundPlayer.Volume = Music.Value / 100;
+            ElementSoundPlayer.Play(ElementSoundKind.Invoke);
         }
     }
 }
