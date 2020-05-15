@@ -22,6 +22,8 @@
   </Dependencies>
   <Resources>
     <Resource Language="ES-ES" />
+    <Resource Language="ES" />
+    <Resource Language="EN" />
   </Resources>
   <Applications>
     <Application Id="App" Executable="Hito3.exe" EntryPoint="Hito3.App">
@@ -47,7 +49,7 @@
     <build:Item Name="VisualStudio" Version="16.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2019" />
     <build:Item Name="OperatingSystem" Version="10.0.18362.836 (WinBuild.160101.0800)" />
-    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="16.0.29311.281" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="16.0.29904.37" />
     <build:Item Name="ProjectGUID" Value="{286099CB-BA9A-44C4-8899-836CE6B9EEE3}" />
     <build:Item Name="OptimizingToolset" Value="None" />
     <build:Item Name="TargetRuntime" Value="Managed" />

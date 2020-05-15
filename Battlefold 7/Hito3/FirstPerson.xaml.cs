@@ -26,6 +26,7 @@ namespace Hito3
     /// </summary>
     public sealed partial class FirstPerson : Page
     {
+        static bool firstPerson;
         bool open = false;
 
         int red = 0;
@@ -53,6 +54,7 @@ namespace Hito3
 
             healthWidth = healthBar.Width;
             health = maxHealth;
+            firstPerson = true;
         }
 
         void CoreWindow_KeyDown(Windows.UI.Core.CoreWindow sender, Windows.UI.Core.KeyEventArgs e)
@@ -61,9 +63,14 @@ namespace Hito3
             {
                 case Windows.System.VirtualKey.Escape:
                     //Se cambia de página
-                    BetweenPageParameter param = new BetweenPageParameter();
-                    param.Time = seconds;
-                    this.Frame.Navigate(typeof(InGameMap), param);
+
+                    if (firstPerson)
+                    {
+                        firstPerson = false;
+                        BetweenPageParameter param = new BetweenPageParameter();
+                        param.Time = seconds;
+                        this.Frame.Navigate(typeof(InGameMap), param);
+                    }
                     break;
                 case Windows.System.VirtualKey.Space:
                     //Daño demostrativo de la barra de vida

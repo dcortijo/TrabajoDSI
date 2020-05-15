@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Globalization;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -23,11 +24,15 @@ namespace Hito3
     /// </summary>
     public sealed partial class Options : Page
     {
+        static bool spanish = true;
+
         Tab activeTab;
         public Options()
         {
             this.InitializeComponent();
             this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
+            //if (spanish) flag.Source = "/Assets/UK.png";
+            //else flag = new Image("/Assets/UK.png");
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
@@ -40,6 +45,24 @@ namespace Hito3
         {
             activeTab = Tab.Graphics;
             changeState();
+        }
+
+        private void Language_Click(object sender, RoutedEventArgs e)
+        {
+            if (spanish)
+            {
+                ApplicationLanguages.PrimaryLanguageOverride = "en";
+                spanish = false;
+            }
+
+            else
+            {
+                ApplicationLanguages.PrimaryLanguageOverride = "es";
+                spanish = true;
+            }
+
+            Frame.CacheSize = 0;
+            this.Frame.Navigate(typeof(Options));
         }
 
         private void Sound_Click(object sender, RoutedEventArgs e)

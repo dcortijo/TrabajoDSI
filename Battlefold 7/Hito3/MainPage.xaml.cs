@@ -6,6 +6,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Globalization;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -34,6 +35,7 @@ namespace Hito3
 
         private void Options_Button_Click(object sender, RoutedEventArgs e)
         {
+            ApplicationLanguages.PrimaryLanguageOverride = "es";
             this.Frame.Navigate(typeof(Options), e);
         }
 
