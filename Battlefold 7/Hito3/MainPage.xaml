@@ -108,7 +108,7 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Button x:Name="Friends" HorizontalAlignment="Stretch" Click="Button_Click" Grid.Row="3" Grid.RowSpan="3" VerticalAlignment="Stretch" Grid.Column="1" Flyout="{StaticResource Friends_Flyout}"/>
+            <Button x:Name="Friends" Content="Friends" Foreground="Blue" FontSize="30" FontFamily="Courier New" HorizontalAlignment="Stretch" Click="Button_Click" Grid.Row="3" Grid.RowSpan="3" VerticalAlignment="Stretch" Grid.Column="1" Flyout="{StaticResource Friends_Flyout}"/>
         </Grid>
 
         <Grid Grid.Row="2" Grid.Column="2" Grid.RowSpan="2" Grid.ColumnSpan="2">
