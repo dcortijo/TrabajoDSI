@@ -185,6 +185,7 @@
     <Content Include="Assets\plus.png" />
     <Content Include="Assets\Raton.png" />
     <Content Include="Assets\Screen.png" />
+    <Content Include="Assets\search.png" />
     <Content Include="Assets\shipAlly.png" />
     <Content Include="Assets\shipBlack.png" />
     <Content Include="Assets\shipEnemy.png" />
