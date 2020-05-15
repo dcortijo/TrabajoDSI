@@ -42,12 +42,12 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <TextBlock Text="Control type" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
-            <Button x:Name="Controls_Switch" Click="Controls_Switch_Click" Content="Mouse and Keyboard" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" BorderBrush="Blue" />
-            <TextBlock Text="Mouse sensitivity" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
-            <TextBlock Text="Inverted Y axis" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
-            <TextBlock Text="Gallvanos callibration" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
-            <TextBlock Text="Key speed" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <TextBlock x:Uid="controlType" Text="Control type" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <Button x:Name="Controls_Switch" x:Uid="controlTypeButton" Click="Controls_Switch_Click" Content="Mouse and Keyboard" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" BorderBrush="Blue" />
+            <TextBlock x:Uid="sensitivity" Text="Mouse sensitivity" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <TextBlock x:Uid="invertedAxis" Text="Inverted Y axis" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <TextBlock x:Uid="gallvanos" Text="Gallvanos callibration" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <TextBlock x:Uid="keySpeed" Text="Key speed" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
             <Slider Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black"/>
             <Slider Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black"/>
             <CheckBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="1" Foreground="Blue" />
@@ -127,9 +127,9 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <TextBlock Text="Voices" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
-            <TextBlock Text="Music" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
-            <TextBlock Text="Effects" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <TextBlock x:Uid="voices" Text="Voices" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <TextBlock x:Uid="music" Text="Music" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
+            <TextBlock x:Uid="effects" Text="Effects" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" />
             <Slider Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black"/>
             <Slider Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black"/>
             <Slider Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black"/>
@@ -219,15 +219,15 @@
                 </Grid.RowDefinitions>
                 <Image Source="/Assets/Gallvanos.jpg"  HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1"/>
             </Grid>
-            <TextBlock Text="Resolution" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" FontSize="22"/>
+            <TextBlock x:Uid="resolution" Text="Resolution" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" FontSize="22"/>
             <Slider x:Name="Resolution_Slider" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black" VerticalAlignment="Center"/>
-            <TextBlock Text="Brightness" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" FontSize="22"/>
+            <TextBlock  x:Uid="brightness" Text="Brightness" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" FontSize="22"/>
             <Slider x:Name="Brightness_Slider" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Blue" Background="Black" VerticalAlignment="Center"/>
-            <TextBlock Text="Colorblind Mode" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" FontSize="22"/>
+            <TextBlock  x:Uid="colorblind" Text="Colorblind Mode" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" FontSize="22"/>
             <CheckBox Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="1" Foreground="Blue" />
-            <TextBlock Text="Fullscreen" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" FontSize="22"/>
+            <TextBlock  x:Uid="fullscreen" Text="Fullscreen" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" FontSize="22"/>
             <CheckBox Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="1" Foreground="Blue"/>
-            <TextBlock Text="Gallvanos Mode" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" FontSize="22"/>
+            <TextBlock  x:Uid="gallvanosmode" Text="Gallvanos Mode" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" FontSize="22"/>
             <CheckBox Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="1" Foreground="Blue" />
 
             <TextBlock Text="{Binding ElementName=Resolution_Slider, Path=Value}" Grid.Row="2" Grid.Column="5" HorizontalAlignment="Center" Foreground="Blue" FontSize="22" VerticalAlignment="Center"/>
@@ -239,7 +239,7 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Button Content="Main Menu" BorderThickness="1" BorderBrush="RoyalBlue" Foreground="Blue" x:Name="Exit_Button" Click="Exit_Button_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#E5DAE8FC"/>
+            <Button x:Uid="mainmenu" Content="Main Menu" BorderThickness="1" BorderBrush="RoyalBlue" Foreground="Blue" x:Name="Exit_Button" Click="Exit_Button_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#E5DAE8FC"/>
         </Grid>
         
         <Grid Grid.RowSpan="1" Grid.Column="1">
@@ -256,12 +256,12 @@
                 <RowDefinition Height="2*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Button Click="Graphics_Click" Content="Graphics" BorderThickness="1" BorderBrush="RoyalBlue" x:Name="Graphics" Grid.Column="0" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#BFCCDAED" FontSize="16" FontStretch="Undefined" Foreground="Blue" FocusVisualSecondaryBrush="White" FocusVisualPrimaryBrush="Blue"/>
-            <Button Click="Sound_Click" Content="Sound" BorderThickness="1" BorderBrush="RoyalBlue" x:Name="Sound" Grid.Column="2" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#BFCCDAED" FontSize="16" FontStretch="Undefined" Foreground="Blue" FocusVisualSecondaryBrush="White" FocusVisualPrimaryBrush="Blue"/>
-            <Button Click="Controls_Click" Content="Controls" BorderThickness="1" BorderBrush="RoyalBlue" x:Name="Controls" Grid.Column="4" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#BFCCDAED" FontSize="16" FontStretch="Undefined" Foreground="Blue" FocusVisualSecondaryBrush="White" FocusVisualPrimaryBrush="Blue" />
+            <Button x:Uid="graphics" Click="Graphics_Click" Content="Graphics" BorderThickness="1" BorderBrush="RoyalBlue" x:Name="Graphics" Grid.Column="0" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#BFCCDAED" FontSize="16" FontStretch="Undefined" Foreground="Blue" FocusVisualSecondaryBrush="White" FocusVisualPrimaryBrush="Blue"/>
+            <Button x:Uid="sound" Click="Sound_Click" Content="Sound" BorderThickness="1" BorderBrush="RoyalBlue" x:Name="Sound" Grid.Column="2" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#BFCCDAED" FontSize="16" FontStretch="Undefined" Foreground="Blue" FocusVisualSecondaryBrush="White" FocusVisualPrimaryBrush="Blue"/>
+            <Button x:Uid="controls" Click="Controls_Click" Content="Controls" BorderThickness="1" BorderBrush="RoyalBlue" x:Name="Controls" Grid.Column="4" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#BFCCDAED" FontSize="16" FontStretch="Undefined" Foreground="Blue" FocusVisualSecondaryBrush="White" FocusVisualPrimaryBrush="Blue" />
 
-            <Button BorderThickness="1" BorderBrush="RoyalBlue" x:Name="Language" Grid.Column="6" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#BFCCDAED" FontSize="12" FontStretch="Undefined" Foreground="Blue">
-                <Image Source="/Assets/UK.png" Stretch="Fill"/>
+            <Button Click="Language_Click" BorderThickness="1" BorderBrush="RoyalBlue" x:Name="Language" Grid.Column="6" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#BFCCDAED" FontSize="12" FontStretch="Undefined" Foreground="Blue">
+                <Image x:Name="flag" Source="/Assets/UK.png" Stretch="Fill"/>
             </Button>
             
             <Image Source="/Assets/mando.png"  Grid.Column="4" Grid.Row="1" HorizontalAlignment="Left"/>

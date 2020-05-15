@@ -108,7 +108,7 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Button x:Name="Friends" HorizontalAlignment="Stretch" Click="Button_Click" Grid.Row="3" Grid.RowSpan="3" VerticalAlignment="Stretch" Grid.Column="1" Flyout="{StaticResource Friends_Flyout}"/>
+            <Button x:Name="Friends" x:Uid="friendsButton" HorizontalAlignment="Stretch" Click="Button_Click" Grid.Row="3" Grid.RowSpan="3" VerticalAlignment="Stretch" Grid.Column="1" Flyout="{StaticResource Friends_Flyout}"/>
         </Grid>
 
         <Grid Grid.Row="2" Grid.Column="2" Grid.RowSpan="2" Grid.ColumnSpan="2">
@@ -122,11 +122,11 @@
                 <ColumnDefinition Width="5*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-        <Button x:Name="Play" HorizontalAlignment="Stretch" Content="Play" Foreground="Blue" FontSize="80" FontFamily="Courier New" Click="Play_Button_Click" CornerRadius="100000" Grid.Row="1" Grid.Column="1" VerticalAlignment="Stretch"/>
+        <Button x:Name="Play" x:Uid="startButton" HorizontalAlignment="Stretch" Content="Play" Foreground="Blue" FontSize="80" FontFamily="Courier New" Click="Play_Button_Click" CornerRadius="100000" Grid.Row="1" Grid.Column="1" VerticalAlignment="Stretch"/>
             
         </Grid>
         <TextBlock Text="BATTLEFOLD 7" HorizontalAlignment="Center" Margin="0,20,0,19" TextWrapping="Wrap" Foreground="#FFFFC70F" FontFamily="Courier New" FontWeight="Bold" FontSize="100" Grid.Column="1" Grid.ColumnSpan="6" Grid.RowSpan="2"/>
-        <Button x:Name="Exit" Content="Exit" Foreground="Blue" FontSize="50" FontFamily="Courier New" HorizontalAlignment="Stretch" Click="Exit_Button_Click" Grid.Row="2" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="1" VerticalAlignment="Stretch"/>
+        <Button x:Name="Exit" x:Uid="exitButton" Content="Exit" Foreground="Blue" FontSize="50" FontFamily="Courier New" HorizontalAlignment="Stretch" Click="Exit_Button_Click" Grid.Row="2" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="1" VerticalAlignment="Stretch"/>
 
         <Grid Grid.Row="6" >
             <Grid.RowDefinitions>
