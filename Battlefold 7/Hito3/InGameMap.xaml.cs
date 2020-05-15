@@ -314,7 +314,7 @@ namespace Hito3
             }
             else
             {
-                if(timeLeft == totalTime - 5)
+                if(timeLeft <= totalTime - 5)
                 {
                     BeginText.Visibility = Visibility.Collapsed;
                 }
