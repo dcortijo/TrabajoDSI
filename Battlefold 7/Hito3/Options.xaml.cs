@@ -39,6 +39,11 @@ namespace Hito3
             ElementSoundPlayer.State = ElementSoundPlayerState.On;
             activeTab = Tab.Graphics;
             changeState();
+
+            string s;
+            if (spanish) s = "ms-appx:///Assets////spanishFlag.png";
+            else s = "ms-appx:///Assets////UK.png";
+            flag.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));
         }
 
         private void Graphics_Click(object sender, RoutedEventArgs e)
@@ -60,7 +65,6 @@ namespace Hito3
                 ApplicationLanguages.PrimaryLanguageOverride = "es";
                 spanish = true;
             }
-
             Frame.CacheSize = 0;
             this.Frame.Navigate(typeof(Options));
         }
