@@ -66,8 +66,8 @@
             </StackPanel>
         </Flyout>
     </Page.Resources>
-    
-    <Grid>
+
+    <Grid XYFocusKeyboardNavigation="Enabled">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -94,7 +94,7 @@
                 <ColumnDefinition Width="2*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="Options" HorizontalAlignment="Stretch" Click="Options_Button_Click" Grid.Row="0" VerticalAlignment="Stretch" Grid.Column="1"/>
+            <Button x:Name="Options" HorizontalAlignment="Stretch" Click="Options_Button_Click" Grid.Row="0" VerticalAlignment="Stretch" Grid.Column="1" XYFocusLeft="{x:Bind Play}" XYFocusUp="{x:Bind Friends}"/>
         </Grid>
 
         <Grid Grid.Column="5" Grid.Row="1" Grid.RowSpan="2">
@@ -108,7 +108,7 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Button x:Name="Friends" x:Uid="friendsButton" HorizontalAlignment="Stretch" Click="Button_Click" Grid.Row="3" Grid.RowSpan="3" VerticalAlignment="Stretch" Grid.Column="1" Flyout="{StaticResource Friends_Flyout}"/>
+            <Button x:Name="Friends" x:Uid="friendsButton" HorizontalAlignment="Stretch" Click="Button_Click" Grid.Row="3" Grid.RowSpan="3" VerticalAlignment="Stretch" Grid.Column="1" Flyout="{StaticResource Friends_Flyout}" Foreground="Blue" FontSize="40" FontFamily="Courier New" />
         </Grid>
 
         <Grid Grid.Row="2" Grid.Column="2" Grid.RowSpan="2" Grid.ColumnSpan="2">
@@ -122,7 +122,7 @@
                 <ColumnDefinition Width="5*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-        <Button x:Name="Play" x:Uid="startButton" HorizontalAlignment="Stretch" Content="Play" Foreground="Blue" FontSize="80" FontFamily="Courier New" Click="Play_Button_Click" CornerRadius="100000" Grid.Row="1" Grid.Column="1" VerticalAlignment="Stretch"/>
+            <Button x:Name="Play" x:Uid="startButton" HorizontalAlignment="Stretch" Content="Play" Foreground="Blue" FontSize="80" FontFamily="Courier New" Click="Play_Button_Click" CornerRadius="100000" Grid.Row="1" Grid.Column="1" VerticalAlignment="Stretch" XYFocusRight="{x:Bind Friends}" XYFocusDown="{x:Bind Options}"/>
             
         </Grid>
         <TextBlock Text="BATTLEFOLD 7" HorizontalAlignment="Center" Margin="0,20,0,19" TextWrapping="Wrap" Foreground="#FFFFC70F" FontFamily="Courier New" FontWeight="Bold" FontSize="100" Grid.Column="1" Grid.ColumnSpan="6" Grid.RowSpan="2"/>

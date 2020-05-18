@@ -22,6 +22,7 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="Name" />
+      <RootProperty Name="XYFocusKeyboardNavigation" />
       <RootProperty Name="Background" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="MaxHeight" />
@@ -161,7 +162,11 @@
       <RootProperty Name="FontFamily" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="CornerRadius" />
+      <RootProperty Name="XYFocusRight" />
+      <RootProperty Name="XYFocusDown" />
       <RootProperty Name="Flyout" />
+      <RootProperty Name="XYFocusLeft" />
+      <RootProperty Name="XYFocusUp" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="Background" />
@@ -179,6 +184,7 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="Background" />
       <RootProperty Name="VerticalAlignment" />
+      <RootEvent Name="ValueChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
       <RootProperty Name="Foreground" />
