@@ -62,7 +62,7 @@ namespace Hito3
             switch (e.VirtualKey)
             {
                 case Windows.System.VirtualKey.Escape:
-                case Windows.System.VirtualKey.GamepadLeftTrigger:
+                case Windows.System.VirtualKey.GamepadB:
                     //Se cambia de página
 
                     if (firstPerson)
