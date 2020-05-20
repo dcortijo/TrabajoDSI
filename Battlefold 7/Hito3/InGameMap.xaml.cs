@@ -63,9 +63,7 @@ namespace Hito3
                     //VMitem.CCImg.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
                     VMitem.CCImg.ManipulationMode = ManipulationModes.All;
                     (VMitem.CCImg.Content as Image).RenderTransform = VMitem.Rotacion;
-                    //VMitem.CCImg.GotFocus += VehicleGotFocus;
-                    //VMitem.CCImg.LostFocus += VehicleLostFocus;
-                    //VMitem.CCImg.KeyDown += VehicleKeyDown;
+                    VMitem.CCImg.GotFocus += VehicleGotFocus;
                     MapCanvas.Children.Add(VMitem.CCImg);
                     MapCanvas.Children.Last().SetValue(Canvas.LeftProperty, VMitem.X);
                     MapCanvas.Children.Last().SetValue(Canvas.TopProperty, VMitem.Y);
@@ -81,6 +79,8 @@ namespace Hito3
                     if (VMitem.team == InGameVehicle.aligment.yours)
                     {
                         MapCanvas.Children.Last().PointerPressed += ClickedVeh;
+                        MapCanvas.Children.Last().XYFocusKeyboardNavigation = XYFocusKeyboardNavigationMode.Enabled;
+                        (MapCanvas.Children.Last() as ContentControl).IsTabStop = true;
 
                         AmmoCanvas.Children.Add(new Border());
                         (AmmoCanvas.Children.Last() as Border).Height = VMitem.overheatBar / 3;
@@ -99,6 +99,11 @@ namespace Hito3
                         FlagsCanvas.Children.Last().SetValue(Canvas.LeftProperty, VMitem.X);
                         FlagsCanvas.Children.Last().SetValue(Canvas.TopProperty, VMitem.Y);
                     }
+                    else
+                    {
+                        MapCanvas.Children.Last().XYFocusKeyboardNavigation = XYFocusKeyboardNavigationMode.Disabled;
+                        (MapCanvas.Children.Last() as ContentControl).IsTabStop = false;
+                    }
 
                     i++;
                 }
@@ -114,7 +119,7 @@ namespace Hito3
 
             timeLeft = (e.Parameter as BetweenPageParameter).Time;
 
-            /*Gamepad.GamepadAdded += (object sender, Gamepad e3) =>
+            Gamepad.GamepadAdded += (object sender, Gamepad e3) =>
             {
                 // Check if the just-added gamepad is already in myGamepads; if it isn't, add
                 // it.
@@ -126,6 +131,7 @@ namespace Hito3
                         myGamepads.Add(e3);
                     }
                 }
+                mainGamepad = myGamepads[0];
             };
 
             Gamepad.GamepadRemoved += (object sender, Gamepad e32) =>
@@ -142,7 +148,7 @@ namespace Hito3
                         myGamepads.RemoveAt(indexRemoved);
                     }
                 }
-            };*/
+            };
 
             DispatcherTimerSetup();
         }
@@ -193,16 +199,18 @@ namespace Hito3
                 switch (e.Key)
                 {
                     case Windows.System.VirtualKey.B:
+                    case Windows.System.VirtualKey.GamepadRightShoulder:
                         ListaVeh[activeIndex].bomb = true;
                         bombIndex = activeIndex;
                         MapCanvas.Children.Last().Visibility = Visibility.Visible;
                         break;
                     case Windows.System.VirtualKey.V:
+                    case Windows.System.VirtualKey.GamepadLeftShoulder:
                         deactivateAllBombs();   //So no more than 1 bomb carrier
                         bombIndex = -1;
                         MapCanvas.Children.Last().Visibility = Visibility.Collapsed;
                         break;
-                    /*case Windows.System.VirtualKey.W:
+                    case Windows.System.VirtualKey.W:
                         ListaVeh[activeIndex].Y -= 5;
                         break;
                     case Windows.System.VirtualKey.A:
@@ -213,8 +221,9 @@ namespace Hito3
                         break;
                     case Windows.System.VirtualKey.D:
                         ListaVeh[activeIndex].X += 5;
-                        break;*/
+                        break;
                     case Windows.System.VirtualKey.F:
+                    case Windows.System.VirtualKey.GamepadX:
                         BetweenPageParameter param = new BetweenPageParameter();
                         param.Time = timeLeft;
                         this.Frame.Navigate(typeof(FirstPerson), param);
@@ -230,9 +239,9 @@ namespace Hito3
             updateAmmo();
         }
 
-        /*private readonly object myLock = new object();
+        private readonly object myLock = new object();
         private List<Gamepad> myGamepads = new List<Gamepad>();
-        private Gamepad mainGamepad;*/
+        private Gamepad mainGamepad;
 
         void reposition(int i)
         {
@@ -342,6 +351,25 @@ namespace Hito3
                     checkIfBombInBase();
                 }
             }
+            if (mainGamepad != null && activeIndex != -1)
+            {
+                if (mainGamepad.GetCurrentReading().RightThumbstickY > 0.5)
+                {
+                    ListaVeh[activeIndex].Y -= 5;
+                }
+                else if (mainGamepad.GetCurrentReading().RightThumbstickY < -0.5)
+                {
+                    ListaVeh[activeIndex].Y += 5;
+                }
+                if (mainGamepad.GetCurrentReading().RightThumbstickX > 0.5)
+                {
+                    ListaVeh[activeIndex].X += 5;
+                }
+                else if (mainGamepad.GetCurrentReading().RightThumbstickX < -0.5)
+                {
+                    ListaVeh[activeIndex].X -= 5;
+                }
+            }
         }
 
         void updateAmmo()
@@ -356,6 +384,12 @@ namespace Hito3
         private void page_SizeChanged(object sender, SizeChangedEventArgs e)
         {
             PanelSize = e.NewSize.Width / ListaYourVeh.Count();
+        }
+
+        private void VehicleGotFocus(object sender, RoutedEventArgs e)
+        {
+            activeIndex = MapCanvas.Children.IndexOf(sender as ContentControl);
+            ListViewVehicles.SelectedIndex = activeIndex;
         }
     }
 }
