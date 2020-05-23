@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-21T14:24:43.399</Modified>
+      <Modified>2020-05-23T11:32:59.666</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\Hito3.exe">
       <PackagePath>entrypoint\Hito3.exe</PackagePath>
-      <Modified>2020-05-21T14:24:42.966</Modified>
+      <Modified>2020-05-23T11:32:59.232</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -286,27 +286,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-05-20T10:36:25.051</Modified>
+      <Modified>2020-05-23T11:32:59.026</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\FirstPerson.xbf">
       <PackagePath>FirstPerson.xbf</PackagePath>
-      <Modified>2020-05-20T10:36:25.051</Modified>
+      <Modified>2020-05-23T11:32:59.026</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\InGameMap.xbf">
       <PackagePath>InGameMap.xbf</PackagePath>
-      <Modified>2020-05-20T10:36:25.051</Modified>
+      <Modified>2020-05-23T11:32:59.027</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-05-20T10:36:25.032</Modified>
+      <Modified>2020-05-23T11:32:59.008</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\Options.xbf">
       <PackagePath>Options.xbf</PackagePath>
-      <Modified>2020-05-20T10:36:25.044</Modified>
+      <Modified>2020-05-23T11:32:59.020</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\PlanningView.xbf">
       <PackagePath>PlanningView.xbf</PackagePath>
-      <Modified>2020-05-20T10:36:25.050</Modified>
+      <Modified>2020-05-23T11:32:59.026</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -318,7 +318,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gallvanos\Documents\UCM\DSI\Trabajo\TrabajoDSI\Battlefold 7\Hito3\bin\x86\Debug\Core\Hito3.exe">
       <PackagePath>Hito3.exe</PackagePath>
-      <Modified>2020-05-21T14:24:43.394</Modified>
+      <Modified>2020-05-23T11:32:59.660</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

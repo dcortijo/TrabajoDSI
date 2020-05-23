@@ -71,7 +71,7 @@ namespace Hito3
                     HealthCanvas.Children.Add(new Border());
                     (HealthCanvas.Children.Last() as Border).Height = VMitem.healthBar / 3;
                     (HealthCanvas.Children.Last() as Border).Width = 6;
-                    (HealthCanvas.Children.Last() as Border).Background = new SolidColorBrush(Windows.UI.Colors.Green);
+                    (HealthCanvas.Children.Last() as Border).Background = new SolidColorBrush(Windows.UI.Colors.YellowGreen);
                     (HealthCanvas.Children.Last() as Border).CornerRadius = new Windows.UI.Xaml.CornerRadius(5);
                     HealthCanvas.Children.Last().SetValue(Canvas.LeftProperty, VMitem.X - 5);
                     HealthCanvas.Children.Last().SetValue(Canvas.TopProperty, VMitem.Y + 10);
