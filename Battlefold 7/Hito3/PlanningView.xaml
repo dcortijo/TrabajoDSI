@@ -22,8 +22,8 @@
 
                 <Image x:Name="Background" Source="Assets/VehicleSelectBackground.png" Grid.ColumnSpan="2" Grid.RowSpan="2" Stretch="Fill"/>
                 <Image x:Name="WeaponBackground" Source="Assets/WeaponSelectBackground.png" Grid.Row="1" Grid.Column="1" Stretch="Fill"/>
-                <Image x:Name="VehicleImage" Source="{x:Bind vehicleImageSource, Mode=TwoWay}" Grid.ColumnSpan="2" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="15,15,15,15"/>
-                <Image x:Name="WeaponImage" Source="{x:Bind weapon.weaponImage, Mode=TwoWay}" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,5,5,5"/>
+                <Image x:Name="VehicleImage" Source="Assets/plus.png" Grid.ColumnSpan="2" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="15,15,15,15"/>
+                <Image x:Name="WeaponImage" Source="Assets/plus.png" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,5,5,5"/>
                 <Grid Tapped="VehicleButton_Click" Grid.ColumnSpan="2" Grid.RowSpan="2">
                     <FlyoutBase.AttachedFlyout>
                         <Flyout x:Name="VehicleFlyout" Closed="VehicleFlyout_Closed" Placement="Right">
@@ -102,8 +102,8 @@
             </Grid>
         </DataTemplate>
     </Page.Resources>
-    
-    <Grid>
+
+    <Grid x:Name="MainGrid" KeyDown="MainGrid_KeyDown">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="5*"/>
@@ -125,7 +125,7 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="2*"/>
             </Grid.RowDefinitions>
-            <Image Source="Assets/madrid.png" Stretch="Fill" Grid.ColumnSpan="5" Grid.RowSpan="5" PointerPressed="PointerPressed_CCImg" PointerReleased="PointerReleased_CCImg" PointerMoved="PointerMoved_CCImg" />
+            <Image Source="Assets/madrid.png" Stretch="Fill" Grid.ColumnSpan="5" Grid.RowSpan="5" PointerPressed="PointerPressed_CCImg" PointerReleased="PointerReleased_CCImg" PointerMoved="PointerMoved_CCImg"/>
             <Image Source="Assets/InfluenceAlly.png" Stretch="Uniform" Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="3" Grid.RowSpan="2"/>
             <Image Source="Assets/InfluenceEnemy.png" Stretch="Uniform" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Grid.RowSpan="2"/>
             <Image Source="Assets/BombLocation.png" Stretch="Uniform" Grid.Column="2" Grid.Row="2"/>

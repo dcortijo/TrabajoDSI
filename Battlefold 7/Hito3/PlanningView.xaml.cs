@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Gaming.Input;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,8 +26,13 @@ namespace Hito3
     {
         public ObservableCollection<PlanningViewVehicleVM> ListaVehiculos { get; } = new ObservableCollection<PlanningViewVehicleVM>();
         DispatcherTimer timer;
+        DispatcherTimer updateTimer;
         int timeLeft = 30;
         int selectedVehicle = 0;
+
+        private readonly object myLock = new object();
+        private List<Gamepad> myGamepads = new List<Gamepad>();
+        private Gamepad mainGamepad;
 
         public PlanningView()
         {
@@ -44,13 +50,44 @@ namespace Hito3
                     ListaVehiculos.Add(vm);
                     vm.CCImg.Visibility = Visibility.Collapsed;
                     vm.CCImg.ManipulationMode = ManipulationModes.All;
-                    vm.CCImg.KeyDown += KeyDown_CCImg;
                     vm.CCImg.GotFocus += GotFocus_CCImg;
                     VehicleMap.Children.Add(vm.CCImg);
                     VehicleMap.Children.Last().SetValue(Canvas.LeftProperty, vm.X);
                     VehicleMap.Children.Last().SetValue(Canvas.TopProperty, vm.Y);
                 }
             }
+
+            Gamepad.GamepadAdded += (object sender, Gamepad e3) =>
+            {
+                // Check if the just-added gamepad is already in myGamepads; if it isn't, add
+                // it.
+                lock (myLock)
+                {
+                    bool gamepadInList = myGamepads.Contains(e3);
+                    if (!gamepadInList)
+                    {
+                        myGamepads.Add(e3);
+                    }
+                }
+                mainGamepad = myGamepads[0];
+            };
+
+            Gamepad.GamepadRemoved += (object sender, Gamepad e32) =>
+            {
+                lock (myLock)
+                {
+                    int indexRemoved = myGamepads.IndexOf(e32);
+                    if (indexRemoved > -1)
+                    {
+                        if (mainGamepad == myGamepads[indexRemoved])
+                        {
+                            mainGamepad = null;
+                        }
+                        myGamepads.RemoveAt(indexRemoved);
+                    }
+                }
+            };
+
             DispatcherTimerSetup();
         }
 
@@ -83,10 +120,9 @@ namespace Hito3
                 }
             }
         }
-
-        private void KeyDown_CCImg(object sender, KeyRoutedEventArgs e)
+        private void MainGrid_KeyDown(object sender, KeyRoutedEventArgs e)
         {
-            if (selectedVehicle == VehicleMap.Children.IndexOf(sender as ContentControl))
+            if (selectedVehicle != -1)
             {
                 switch (e.Key)
                 {
@@ -105,6 +141,7 @@ namespace Hito3
                 }
             }
         }
+
         private void MoveDronRight(int cant)
         {
             ListaVehiculos[selectedVehicle].X += cant;
@@ -135,7 +172,7 @@ namespace Hito3
 
         private void GotFocus_CCImg(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         private void DispatcherTimerSetup()
@@ -146,6 +183,11 @@ namespace Hito3
             timer.Start();
             Timer.Text = ((timeLeft / 60) <= 9 ? "0" : "") + (timeLeft / 60).ToString() + ":"
                 + ((timeLeft % 60) <= 9 ? "0" : "") + (timeLeft % 60).ToString();
+
+            updateTimer = new DispatcherTimer();
+            updateTimer.Interval = new TimeSpan(0, 0, 0, 0, 33);
+            updateTimer.Tick += UpdateTick;
+            updateTimer.Start();
         }
 
         void TimerTick(object sender, object e)
@@ -162,6 +204,29 @@ namespace Hito3
                 param.Time = 200;
                 this.Frame.Navigate(typeof(InGameMap), param);
                 timer.Stop();
+            }
+        }
+
+        void UpdateTick(object sender, object e)
+        {
+            if (mainGamepad != null && selectedVehicle != -1)
+            {
+                if (mainGamepad.GetCurrentReading().RightThumbstickY > 0.5)
+                {
+                    ListaVehiculos[selectedVehicle].Y -= 5;
+                }
+                else if (mainGamepad.GetCurrentReading().RightThumbstickY < -0.5)
+                {
+                    ListaVehiculos[selectedVehicle].Y += 5;
+                }
+                if (mainGamepad.GetCurrentReading().RightThumbstickX > 0.5)
+                {
+                    ListaVehiculos[selectedVehicle].X += 5;
+                }
+                else if (mainGamepad.GetCurrentReading().RightThumbstickX < -0.5)
+                {
+                    ListaVehiculos[selectedVehicle].X -= 5;
+                }
             }
         }
 
@@ -212,8 +277,8 @@ namespace Hito3
 
         private void Pistol_Button_Click(object sender, RoutedEventArgs e)
         {
-            PlanningViewWeapon weapon = PlanningViewWeapon.GetWeapon(1);
-            ListaVehiculos[selectedVehicle].weapon = weapon;
+            //PlanningViewWeapon weapon = PlanningViewWeapon.GetWeapon(1);
+            //ListaVehiculos[selectedVehicle].weapon = weapon;
         }
 
         private void Harpoon_Button_Click(object sender, RoutedEventArgs e)
