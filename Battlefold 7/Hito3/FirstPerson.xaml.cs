@@ -29,10 +29,10 @@ namespace Hito3
         static bool firstPerson;
         bool open = false;
 
-        int red = 0;
-        int diffRed = 255;
-        int green = 128;
-        int diffGreen = 128;
+        int red = 205;
+        int diffRed = 50;
+        int green = 154;
+        int diffGreen = 154;
 
         int maxHealth = 100;
         int health;
