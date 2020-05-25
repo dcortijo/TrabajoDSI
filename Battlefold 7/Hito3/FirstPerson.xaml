@@ -50,9 +50,9 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Border Grid.Row="1" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="White" CornerRadius="15"  Opacity="0.8" Padding="0,30,0,0">
-                    <TextBlock x:Name="healthText" VerticalAlignment="Center" HorizontalAlignment="Center" Text="100%" FontSize="35*" Foreground="Green" FontWeight="Bold"/>
+                    <TextBlock x:Name="healthText" VerticalAlignment="Center" HorizontalAlignment="Center" Text="100%" FontSize="35*" Foreground="#FF9ACD00" FontWeight="Bold"/>
                 </Border>
-                <Border x:Name="healthBar" Grid.Row="1" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Left" Background="Green" CornerRadius="10" Margin="10,12,10,0" Width="130">
+                <Border x:Name="healthBar" Grid.Row="1" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Left" Background="#FF9ACD00" CornerRadius="10" Margin="10,12,10,0" Width="130">
                     <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 </Border>
             </Grid>
