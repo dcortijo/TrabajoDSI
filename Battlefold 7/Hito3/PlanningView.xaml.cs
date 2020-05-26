@@ -30,10 +30,6 @@ namespace Hito3
         int timeLeft = 30;
         int selectedVehicle = 0;
 
-        private readonly object myLock = new object();
-        private List<Gamepad> myGamepads = new List<Gamepad>();
-        private Gamepad mainGamepad;
-
         public PlanningView()
         {
             this.InitializeComponent();
@@ -56,37 +52,6 @@ namespace Hito3
                     VehicleMap.Children.Last().SetValue(Canvas.TopProperty, vm.Y);
                 }
             }
-
-            Gamepad.GamepadAdded += (object sender, Gamepad e3) =>
-            {
-                // Check if the just-added gamepad is already in myGamepads; if it isn't, add
-                // it.
-                lock (myLock)
-                {
-                    bool gamepadInList = myGamepads.Contains(e3);
-                    if (!gamepadInList)
-                    {
-                        myGamepads.Add(e3);
-                    }
-                }
-                mainGamepad = myGamepads[0];
-            };
-
-            Gamepad.GamepadRemoved += (object sender, Gamepad e32) =>
-            {
-                lock (myLock)
-                {
-                    int indexRemoved = myGamepads.IndexOf(e32);
-                    if (indexRemoved > -1)
-                    {
-                        if (mainGamepad == myGamepads[indexRemoved])
-                        {
-                            mainGamepad = null;
-                        }
-                        myGamepads.RemoveAt(indexRemoved);
-                    }
-                }
-            };
 
             DispatcherTimerSetup();
         }
@@ -186,7 +151,6 @@ namespace Hito3
 
             updateTimer = new DispatcherTimer();
             updateTimer.Interval = new TimeSpan(0, 0, 0, 0, 33);
-            updateTimer.Tick += UpdateTick;
             updateTimer.Start();
         }
 
@@ -204,29 +168,6 @@ namespace Hito3
                 param.Time = 200;
                 this.Frame.Navigate(typeof(InGameMap), param);
                 timer.Stop();
-            }
-        }
-
-        void UpdateTick(object sender, object e)
-        {
-            if (mainGamepad != null && selectedVehicle != -1)
-            {
-                if (mainGamepad.GetCurrentReading().RightThumbstickY > 0.5)
-                {
-                    ListaVehiculos[selectedVehicle].Y -= 5;
-                }
-                else if (mainGamepad.GetCurrentReading().RightThumbstickY < -0.5)
-                {
-                    ListaVehiculos[selectedVehicle].Y += 5;
-                }
-                if (mainGamepad.GetCurrentReading().RightThumbstickX > 0.5)
-                {
-                    ListaVehiculos[selectedVehicle].X += 5;
-                }
-                else if (mainGamepad.GetCurrentReading().RightThumbstickX < -0.5)
-                {
-                    ListaVehiculos[selectedVehicle].X -= 5;
-                }
             }
         }
 

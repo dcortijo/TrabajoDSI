@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="PanelSize" />
+    <RootPropertyPathName Name="Value" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.Application" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Resources" />
+      <RootEvent Name="SizeChanged" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Children" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="XYFocusKeyboardNavigation" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="MaxHeight" />
+      <RootProperty Name="Margin" />
+      <RootEvent Name="KeyDown" />
+      <RootEvent Name="Tapped" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetRowSpan" />
+      <RootMethod Name="SetRowSpan" />
+      <RootMethod Name="GetColumnSpan" />
+      <RootMethod Name="SetColumnSpan" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Source" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="MaxWidth" />
+      <RootProperty Name="MaxHeight" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootEvent Name="PointerPressed" />
+      <RootEvent Name="PointerReleased" />
+      <RootEvent Name="PointerMoved" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Child" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="FocusVisualPrimaryBrush" />
+      <RootProperty Name="FontStyle" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="FontFamily" />
+    </RootType>
+    <RootType FullName="Hito3.FirstPerson" />
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="ElementName" />
+      <RootProperty Name="Mode" />
+      <RootProperty Name="Path" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
+      <RootProperty Name="Mode" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="MinZoomFactor" />
+      <RootProperty Name="MaxZoomFactor" />
+      <RootProperty Name="ZoomMode" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalScrollMode" />
+      <RootProperty Name="HorizontalScrollBarVisibility" />
+      <RootProperty Name="Content" />
+      <RootMethod Name="GetVerticalScrollBarVisibility" />
+      <RootMethod Name="SetVerticalScrollBarVisibility" />
+      <RootMethod Name="GetHorizontalScrollMode" />
+      <RootMethod Name="SetHorizontalScrollMode" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemsPanel" />
+      <RootProperty Name="Name" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
+      <RootProperty Name="Children" />
+      <RootEvent Name="PointerPressed" />
+      <RootEvent Name="PointerReleased" />
+      <RootEvent Name="PointerMoved" />
+      <RootMethod Name="GetLeft" />
+      <RootMethod Name="SetLeft" />
+      <RootMethod Name="GetTop" />
+      <RootMethod Name="SetTop" />
+    </RootType>
+    <RootType FullName="Hito3.InGameMap" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Flyout">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Placement" />
+      <RootEvent Name="Closed" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Content" />
+      <RootProperty Name="IsEnabled" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="XYFocusRight" />
+      <RootProperty Name="XYFocusDown" />
+      <RootProperty Name="Flyout" />
+      <RootProperty Name="XYFocusLeft" />
+      <RootProperty Name="XYFocusUp" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="FontStretch" />
+      <RootProperty Name="FocusVisualSecondaryBrush" />
+      <RootProperty Name="FocusVisualPrimaryBrush" />
+      <RootProperty Name="MaxWidth" />
+      <RootProperty Name="MaxHeight" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="Margin" />
+      <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="Hito3.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Slider">
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootEvent Name="ValueChanged" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
+      <RootProperty Name="Foreground" />
+    </RootType>
+    <RootType FullName="Hito3.Options" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.FlyoutBase">
+      <RootMethod Name="GetAttachedFlyout" />
+      <RootMethod Name="SetAttachedFlyout" />
+    </RootType>
+    <RootType FullName="Hito3.PlanningView" />
+  </Roots.RootTypes>
+</Roots>
